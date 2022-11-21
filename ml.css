@@ -1,0 +1,139 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ li {
+     list-style: circle;
+ }
+ body {
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+ }
+ /*MAIN*/
+ main {
+     margin-top: 10px;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+ }
+ .container-main {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     width: 90%;
+     height: auto;
+ }
+ .logoml {
+     border-radius: 15px;
+ }
+ .isi {
+     margin-top: 10px;
+     margin-right: 10px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+ .diamond {
+     display: flex;
+ }
+ .wa {
+     padding: 10px;
+     color: black;
+     text-decoration: none;
+     background-color: white;
+     border: 2px solid lime;
+     border-radius: 10px;
+ }
+ .btnk {
+     position: relative;
+     border-radius: 10px;
+     width: 150px;
+     padding: 10px;
+     border: 1px solid blue;
+     color: black;
+     text-decoration: none;
+ }
+
+ .namagame {
+     margin-top: 5px;
+     text-align: center;
+     font-weight: bold;
+ }
+
+ 
+  /*HEADER*/
+  .container-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      background: linear-gradient(320deg,#0099ff,purple);
+  }
+  .brand {margin-left: 10px;}
+ .icon-menu {
+      display: flex;
+      flex-direction: column;
+      height: 60px;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      cursor: pointer;
+ }
+  .garis-horizon {
+      border: 2px solid;
+      width: 35px;
+      border-radius: 10px;
+      background-color: black;
+      height: 5px;
+      margin: 3px 0;
+  }
+  .logostore {
+      width: 60%;
+      height: 30%;
+  }
+ .daftar-link {
+     display: none;
+     position: absolute;
+     top: 20px;
+     right: 50px;
+ }
+ .daftar-link .link-menu {
+     display: block;
+     color: black;
+     text-decoration: none;
+     padding: 5px;
+     background-color: whitesmoke;
+ }
+ .link-menu:hover {
+     background-color: lightgray;
+ }
+ 
+ 
+/*FOOTER*/
+footer {
+     background: linear-gradient(145deg,#0099ff,purple); 
+     width: 100%;
+     height: auto;
+ }
+ .container-footer {
+     display: flex;
+     flex-direction: column;
+     width: auto;
+     flex-wrap: wrap;
+     margin: 5% 10%;
+ }
+ .tentangheka {
+     padding: 10px;
+ }
+ .about {
+     padding: 10px;
+ }
+ .support {
+     padding: 10px;
+ }
+ 
+ 
+ 
