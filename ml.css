@@ -1,0 +1,237 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    src: url('Lato-Regular.ttf');
+    font-family: 'lato';
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: azure;
+}
+/*HEADER*/
+header {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+.container-header {
+    background: linear-gradient(45deg,purple,blue);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand {
+    height: 50px;
+    width: auto;
+    display: flex;
+    margin-left: -50px;
+    justify-content: center;
+    align-items: center;
+}
+.logostore {
+    height: 50px;
+    width: 100%;
+}
+.icon-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    margin-right: 10px;
+    height: 50px;
+    cursor: pointer;
+}
+.garis-horizon {
+    background-color: black;
+    border-radius: 10px;
+    padding: 3px;
+    width: 35px;
+    margin: 3px 0 3px 0;
+}
+.daftar-link {
+    display: none;
+    position: absolute;
+    right: 55px;
+    top: 20px;
+}
+.link-menu {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 6px;
+    width: 100px;
+    background-color: whitesmoke;
+}
+/*MAIN*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+    font-family: 'lato';
+}
+.brand-main {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.cara p {
+    font-family: 'lato';
+    font-weight: bold;
+    filter: opacity(90%);
+}
+.alert {color: red;}
+#caranya {
+    font-family: 'lato';
+    font-weight: bold;
+    font-size: large;
+    filter: opacity(95%);
+}
+.mllogo {
+    width: 100%;
+}
+h1 {
+    font-family: 'lato';
+}
+h2 {
+    margin-left: 10px;
+}
+
+.container-nominal {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    margin: 10px 0 10px 0;
+}
+.dm-no {
+    border-radius: 15px;
+    font-family: 'lato';
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    height: 130px;
+    margin-top: 15px;
+    width: 150px;
+    border: 2px solid blue;
+}
+.harga {
+    font-size: 15px;
+    padding-left: 20px;
+    filter: opacity(95%);
+}
+.dm-no p {
+    margin-left: 10px;
+}
+.container-nominal img {
+    margin-right: 10px;
+}
+.dm-no:hover {
+    transition: .1s;
+    box-shadow: 0px 0px 15px;
+    filter: opacity(80%);
+}
+.button {
+    font-family: 'lato';
+    font-size: 20px;
+    box-shadow: 3px 2px 3px ;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px 50px 10px 50px;
+    text-decoration: none;
+    color: black;
+    background-color: lime;
+}
+
+/*FOOTER*/
+footer {
+    margin-top: 20px;
+    background-color: #0099ff;
+    font-family: 'lato';
+}
+.container-footer {
+    margin: 50px 100px 50px 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+h2 {
+    color: #fff;
+}
+.brand-footer {
+    margin-left: -50px;
+}
+.logostore2 {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.metode {
+    margin-left: 20px;
+    margin-top: 25px;
+    display: inline-block;
+}
+.logostore3 {
+    background-color: #fff;
+    height: 50px;
+}
+.tentang {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+}
+.pfot {
+    color: #fff;
+}
+hr {
+    border: 1px solid black;
+}
+.link-support {
+    margin-top: 5px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+}
+.support {
+    margin-left: 5px;
+    padding: 5px 5px 2px 5px;
+}
+.support:hover {
+    transition: .3s;
+    background-color: white;
+    border-radius: 10px;
+}
+.logoig:hover {
+    transition: .3s;
+    background-color: white;
+    border-radius: 10px;
+}
+.copy {
+    padding: 15px;
+    color: #fff;
+}
+@media screen and (max-width: 500px) {
+    .brand-main {
+        width: 100%;
+    }
+    .container-footer {
+        margin: 25px 50px 25px 50px;
+    }
+    #nominal {
+        width: 100%;
+    }
+}

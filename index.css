@@ -1,0 +1,288 @@
+@font-face {
+    font-family: 'keren';
+    src: url('keren.ttf');
+}
+@font-face {
+    font-family: 'neutron';
+    src: url('NeutronsDemoRegular.ttf');
+}
+@font-face {
+    font-family: 'lato';
+    src: url('Lato-Regular.ttf');
+}
+
+*, html _{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+/*HEADER*/
+header {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+.container-header {
+    background: linear-gradient(45deg,purple,blue);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand {
+    height: 50px;
+    width: auto;
+    display: flex;
+    margin-left: -50px;
+    justify-content: center;
+    align-items: center;
+}
+.logostore {
+    height: 50px;
+    width: 100%;
+}
+.icon-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    margin-right: 10px;
+    height: 50px;
+    cursor: pointer;
+}
+.garis-horizon {
+    background-color: black;
+    border-radius: 10px;
+    padding: 3px;
+    width: 35px;
+    margin: 3px 0 3px 0;
+}
+.daftar-link {
+    display: none;
+    position: absolute;
+    right: 55px;
+    top: 20px;
+}
+.link-menu {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 6px;
+    width: 100px;
+    background-color: whitesmoke;
+}
+
+/*MAIN*/
+main {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+.brand-main {
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+}
+
+.logomain {
+    width: 80%;
+    height: 350px;
+}
+
+.wadah-side {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sidelogo {
+    display: flex;
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    height: 70px;
+}
+.games,.kupon,.diamond {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    color: black;
+    text-decoration: none;
+    filter: grayscale(100%);
+}
+.namaside {
+    margin-left: -1px;
+    margin-top: -3px;
+    font-size: small;
+    font-weight: bold;
+}
+.diamond {
+    border-bottom: 3px solid red;
+    padding-top: 10px;
+    font-size: small;
+    font-weight: bold;
+}
+.mobile-legend {
+    border: 1px solid;
+    height: 100px;
+    width: 100px;
+}
+.top-up {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 10px 150px;
+    font-weight: bold;
+}
+.garis {
+    width: 35px;
+    height: 8px;
+    border-radius: 10px;
+    background-color: lime;
+}
+.mobilelegend {
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    background-color: white;
+    width: 20%;
+    height: 160px;
+    margin-left: 150px;
+    box-shadow: 0px 0px 10px black;
+}
+.ml {
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.namaml, .dmml {
+    font-size: small;
+}
+.dmml {
+    margin-bottom: 5px;
+    filter: opacity(59%);
+}
+.linkml {
+    color: black;
+    text-decoration: none;
+    padding: 5px 75px 5px 75px;
+    background-color: lightblue;
+    border-radius: 15px;
+}
+.wadah-topup {
+    display: flex;
+}
+
+/*FOOTER*/
+footer {
+    margin-top: 20px;
+    background-color: #0099ff;
+    font-family: 'lato';
+}
+.container-footer {
+    margin: 50px 100px 50px 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+h2 {
+    color: #fff;
+}
+.brand-footer {
+    margin-left: -50px;
+}
+.logostore2 {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.metode {
+    margin-left: 20px;
+    margin-top: 25px;
+    display: inline-block;
+}
+.logostore3 {
+    background-color: #fff;
+    height: 50px;
+}
+.tentang {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+}
+.pfot {
+    color: #fff;
+}
+hr {
+    border: 1px solid black;
+}
+.link-support {
+    margin-top: 5px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+}
+.support {
+    margin-left: 5px;
+    padding: 5px 5px 2px 5px;
+}
+.support:hover {
+    transition: .3s;
+    background-color: white;
+    border-radius: 10px;
+}
+.logoig:hover {
+    transition: .3s;
+    background-color: white;
+    border-radius: 10px;
+}
+.copy {
+    padding: 15px;
+    color: #fff;
+}
+@media screen and (max-width: 700px) {
+    .logomain {
+        width: 80%;
+        height: 200px;
+    }
+    .top-up {
+        margin-left: 100px;
+    }
+    .sidelogo {
+        width: 80%;
+    }
+    .linkml {
+        padding: 5px 30px 5px 30px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .mobilelegend {
+        margin: 15px;
+        width: 170px;
+    }
+    .container-footer {
+        margin: 25px 50px 25px 50px;
+    }
+    .logomain {
+        width: 100%;
+        height: 190px;
+    }
+    .top-up {
+        margin-left: 50px;
+    }
+    .sidelogo {
+        width: 100%;
+    }
+    
+}
