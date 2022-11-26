@@ -1,0 +1,11 @@
+document.getElementById('linkwa1').style.display = "none";
+document.getElementById('linkwa2').style.display = "none";
+document.getElementById('linkwa3').style.display = "none";
+document.getElementById('linkwa4').style.display = "none";
+document.getElementById('linkwa5').style.display = "none";
+document.getElementById('linkwa6').style.display = "none";
+document.getElementById('linkwa7').style.display = "none";
+document.getElementById('linkwa8').style.display = "none";
+document.getElementById('linkwa9').style.display = "none";
+document.getElementById('linkwa10').style.display = "none";
+document.getElementById('linkwa11').style.display = "none";
