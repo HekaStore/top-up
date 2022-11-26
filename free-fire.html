@@ -15,15 +15,15 @@
           <div class="container-header">
                <div class="brand"><img src="logostore.webp" alt="FIRSTORE" class="logostore"></div>
                <div class="menu-link">
-                    <div id="btn-menu" class="icon-menu">
-                         <span class="garis-horizon"></span>
-                         <span class="garis-horizon"></span>
-                         <span class="garis-horizon"></span>
+                    <div class="icon-menu">
+                         <div class="garis-horizon"></div>
+                         <div class="garis-horizon"></div>
+                         <div class="garis-horizon"></div>
                     </div>
-                    <div id="isimenu" class="daftar-link">
-                    <a href="#" onclick="alert('Web asli - Segera Hadir')" class="link-menu">Web Asli</a>
-                    <a href="snake.html" class="link-menu">Games</a>
-                    <a href="#" onclick="alert('Belum ada :3')"  class="link-menu">Promo Kode??</a>
+                    <div class="daftar-link">
+                         <a href="snake.html" class="link-menu">Ular</a>
+                         <a href="#" class="link-menu">Webku</a>
+                         <a href="#" class="link-menu">Apl Beruang</a>
                     </div>
                </div>
           </div>
@@ -150,35 +150,40 @@
 
      <footer>
           <div class="container-footer">
-
-               <div class="tentangheka">
-                    <img src="logostore.webp" alt="hekastore" width="200" height="40">
-                    <p>&emsp;&ensp;HekaStore adalah tempat top up untuk teman teman yang ingin top up. Caranya 
-                         kalian tinggal pilih mau yang mana terus chat WA saya 089514433486. Di website ini masih belum
-                         bisa seperti web top up yang lain, masih harus chat yang punya!!! :).
-                    </p>
+               <div class="tentang">
+                    <div class="brand-footer"><img src="logostore.webp" alt="store" class="logostore2"></div>
+               <div class="paragraf">
+                    <p class="pfot">Supplier Top Up game online dan voucher termurah, terpercaya, tercepat di Indonesia. Tersedia berbagai pembayaran, mulai dari CASH dan PULSA</p><br>
+                    <p class="pfot">Ikuti Kami</p>
+                    <div class="link-support">
+                    <a href="https://www.tiktok.com/@far.id9" class="support"><img src="tt.webp" alt="" width="32" height="32"></a>     
+                    <a href="https://www.instagram.com/a.alfan_1125/?next=%2F"><img src="ig.webp" alt="" width="32" height="32" class="logoig"></a>
+                    <a href="https://www.youtube.com/channel/UCv-GLNZD1i3MkB4slWTLbow" class="support"><img src="yt.svg" alt=""></a>
                </div>
-
-               <div class="about">
-                    <label for="diriku">DIRIKU YANG SEBENARNYA :</label><br><br>
-                    &emsp;<a href="#">About</a><br>
-                    &emsp;<a href="#">Contact</a><br>
+                    
                </div>
-
-               <div class="support">
-                    <label for="support">Support</label>
-                    <p>Youtube = Novemas*ID</p>
                </div>
-
+               <div class="pembayaran">
+                    <h2>Pembayaran</h2>
+                    <marquee behavior="" direction="right">
+                         <div class="bayar"></div>
+                         <div class="metode"><img src="Cash.webp" alt="" class="logostore3"></div>
+                         <div class="metode"><img src="Pulsa.webp" alt="" class="logostore3"></div>
+                    </marquee>
+                    
+                    
                </div>
+               
+          </div><hr>
+          <p align="center" class="copy">Copyright 2022 Heka Store</p>
      </footer>
 
      <script src="jquery.js"></script>
      <script src="ml.js"></script>
      <script>
           $(document).ready(function(){
-               $("#btn-menu").click(function(){
-                    $("#isimenu").animate({height : "toggle", display : "block"})
+               $("#icon-menu").click(function(){
+                    $("#daftar-link").toggle(500)
                });
                $("#1").click(function(){
                     $(this).css({backgroundColor: "blue"})
