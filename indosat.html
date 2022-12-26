@@ -13,19 +13,27 @@
 
      <div class="WEBSITE">
           <header>
-               <div class="container-header">
-                    <div class="brand"><img src="logostore.webp" alt="Heka Store" class="logostore"></div>
-                    <div class="menu-link">
+               <div class="container-header">  
+                    <div class="menu-link"> 
                          <div class="icon-menu">
                               <div class="garis-horizon"></div>
                               <div class="garis-horizon"></div>
                               <div class="garis-horizon"></div>
                          </div>
                          <div class="daftar-link">
-                              <a href="snake.html" class="link-menu">Ular</a>
-                              <a href="#" class="link-menu">Webku</a>
-                              <a href="#" class="link-menu">Apl Beruang</a>
+                              <div class="brand-side-bar"><img src="logostore.webp" alt="" class="logo-side-bar"></div>
+                              <a href="index.html" class="link-menu"><b>Beranda</b></a>
+                              <a href="contact.html" class="link-menu"><b>Contact</b></a>
+                              <a href="about.html" class="link-menu"><b>About</b></a>
+                              <a href="serigala.html" class="link-menu"><b>Kode Diskon</b></a>
+                              <a href="tri.html" class="link-menu"><i>Top Up Three</i></a>
+                              <a href="TELKOMSEL.html" class="link-menu"><i>Top Up Telkomsel</i></a>
+                              <a href="XL.html" class="link-menu"><i>Top Up XL</i></a>
                          </div>
+                    </div>
+                    <div class="brand"><img src="logostore.webp" alt="Heka Store" class="logostore"></div>
+                      <div class="login">
+                         <button class="signup"><a href="" style="color: white;text-decoration: none;">Sign-up<br><img src="signup.svg"  alt="" width="20" height="20"></a></button>
                     </div>
                </div>
           </header>
@@ -191,92 +199,93 @@
                          <div class="bayar"></div>
                          <div class="metode"><img src="Cash.webp" alt="" class="logostore3"></div>
                     </marquee>
-                    
-                    
                </div>
                
           </div><hr>
           <p align="center" class="copy">Copyright 2022 Heka Store</p>
      </footer>
 
+     <div id="layar-depan-header"></div>
+     <div id="layar-depan-main"></div>
+     <div id="layar-depan-footer"></div>
+
      <script src="jquery.js"></script>
      <script src="ml.js"></script>
      <script>
           $(document).ready(function(){
-               $("#icon-menu").click(function(){
-                    $("#daftar-link").toggle(500)
-               });
                $("#1").click(function(){
-                    $(this).css({backgroundColor: "skyblue"})
-                    $("#2,#3,#4,#5,#6,#7,#8,#9,#10,#11,#12").css({backgroundColor: "white"})
+                    $(this).css({backgroundColor: "blue"})
+                    $("#2,#3,#4,#5,#6,#7,#8,#9,#10,#11").css({backgroundColor: "white"})
                     $("#linkwa1").css({display: "block"})
-                    $("#linkwa2,#linkwa3,#linkwa4,#linkwa5,#linkwa6,#linkwa7,#linkwa8,#linkwa9,#linkwa10,#linkwa11,#linkwa12").css({display: "none"})
+                    $("#linkwa2,#linkwa3,#linkwa4,#linkwa5,#linkwa6,#linkwa7,#linkwa8,#linkwa9,#linkwa10,#linkwa11").css({display: "none"})
                });
                $("#2").click(function(){
-                    $(this).css({backgroundColor: "skyblue"})
-                    $("#1,#3,#4,#5,#6,#7,#8,#9,#10,#11,#12").css({backgroundColor: "white"})
+                    $(this).css({backgroundColor: "blue"})
+                    $("#1,#3,#4,#5,#6,#7,#8,#9,#10,#11").css({backgroundColor: "white"})
                     $("#linkwa2").css({display: "block"})
-                    $("#linkwa1,#linkwa3,#linkwa4,#linkwa5,#linkwa6,#linkwa7,#linkwa8,#linkwa9,#linkwa10,#linkwa11,#linkwa12").css({display: "none"})
+                    $("#linkwa1,#linkwa3,#linkwa4,#linkwa5,#linkwa6,#linkwa7,#linkwa8,#linkwa9,#linkwa10,#linkwa11").css({display: "none"})
                });
                $("#3").click(function(){
-                    $(this).css({backgroundColor: "skyblue"})
-                    $("#2,#1,#4,#5,#6,#7,#8,#9,#10,#11,#12").css({backgroundColor: "white"})
+                    $(this).css({backgroundColor: "blue"})
+                    $("#2,#1,#4,#5,#6,#7,#8,#9,#10,#11").css({backgroundColor: "white"})
                     $("#linkwa3").css({display: "block"})
-                    $("#linkwa2,#linkwa1,#linkwa4,#linkwa5,#linkwa6,#linkwa7,#linkwa8,#linkwa9,#linkwa10,#linkwa11,#linkwa12").css({display: "none"})
+                    $("#linkwa2,#linkwa1,#linkwa4,#linkwa5,#linkwa6,#linkwa7,#linkwa8,#linkwa9,#linkwa10,#linkwa11").css({display: "none"})
                });
                $("#4").click(function(){
-                    $(this).css({backgroundColor: "skyblue"})
-                    $("#2,#3,#1,#5,#6,#7,#8,#9,#10,#11,#12").css({backgroundColor: "white"})
+                    $(this).css({backgroundColor: "blue"})
+                    $("#2,#3,#1,#5,#6,#7,#8,#9,#10,#11").css({backgroundColor: "white"})
                     $("#linkwa4").css({display: "block"})
-                    $("#linkwa2,#linkwa3,#linkwa1,#linkwa5,#linkwa6,#linkwa7,#linkwa8,#linkwa9,#linkwa10,#linkwa11,#linkwa12").css({display: "none"})
+                    $("#linkwa2,#linkwa3,#linkwa1,#linkwa5,#linkwa6,#linkwa7,#linkwa8,#linkwa9,#linkwa10,#linkwa11").css({display: "none"})
                });
                $("#5").click(function(){
-                    $(this).css({backgroundColor: "skyblue"})
-                    $("#2,#3,#4,#1,#6,#7,#8,#9,#10,#11,#12").css({backgroundColor: "white"})
+                    $(this).css({backgroundColor: "blue"})
+                    $("#2,#3,#4,#1,#6,#7,#8,#9,#10,#11").css({backgroundColor: "white"})
                     $("#linkwa5").css({display: "block"})
-                    $("#linkwa2,#linkwa3,#linkwa4,#linkwa1,#linkwa6,#linkwa7,#linkwa8,#linkwa9,#linkwa10,#linkwa11,#linkwa12").css({display: "none"})
+                    $("#linkwa2,#linkwa3,#linkwa4,#linkwa1,#linkwa6,#linkwa7,#linkwa8,#linkwa9,#linkwa10,#linkwa11").css({display: "none"})
                });
                $("#6").click(function(){
-                    $(this).css({backgroundColor: "skyblue"})
-                    $("#2,#3,#4,#5,#1,#7,#8,#9,#10,#11,#12").css({backgroundColor: "white"})
+                    $(this).css({backgroundColor: "blue"})
+                    $("#2,#3,#4,#5,#1,#7,#8,#9,#10,#11").css({backgroundColor: "white"})
                     $("#linkwa6").css({display: "block"})
-                    $("#linkwa2,#linkwa3,#linkwa4,#linkwa5,#linkwa1,#linkwa7,#linkwa8,#linkwa9,#linkwa10,#linkwa11,#linkwa12").css({display: "none"})
+                    $("#linkwa2,#linkwa3,#linkwa4,#linkwa5,#linkwa1,#linkwa7,#linkwa8,#linkwa9,#linkwa10,#linkwa11").css({display: "none"})
                });
                $("#7").click(function(){
-                    $(this).css({backgroundColor: "skyblue"})
-                    $("#2,#3,#4,#5,#6,#1,#8,#9,#10,#11,#12").css({backgroundColor: "white"})
+                    $(this).css({backgroundColor: "blue"})
+                    $("#2,#3,#4,#5,#6,#1,#8,#9,#10,#11").css({backgroundColor: "white"})
                     $("#linkwa7").css({display: "block"})
-                    $("#linkwa2,#linkwa3,#linkwa4,#linkwa5,#linkwa6,#linkwa1,#linkwa8,#linkwa9,#linkwa10,#linkwa11,#linkwa12").css({display: "none"})
+                    $("#linkwa2,#linkwa3,#linkwa4,#linkwa5,#linkwa6,#linkwa1,#linkwa8,#linkwa9,#linkwa10,#linkwa11").css({display: "none"})
                });
                $("#8").click(function(){
-                    $(this).css({backgroundColor: "skyblue"})
-                    $("#2,#3,#4,#5,#6,#7,#1,#9,#10,#11,#12").css({backgroundColor: "white"})
+                    $(this).css({backgroundColor: "blue"})
+                    $("#2,#3,#4,#5,#6,#7,#1,#9,#10,#11").css({backgroundColor: "white"})
                     $("#linkwa8").css({display: "block"})
-                    $("#linkwa2,#linkwa3,#linkwa4,#linkwa5,#linkwa6,#linkwa7,#linkwa1,#linkwa9,#linkwa10,#linkwa11,#linkwa12").css({display: "none"})
+                    $("#linkwa2,#linkwa3,#linkwa4,#linkwa5,#linkwa6,#linkwa7,#linkwa1,#linkwa9,#linkwa10,#linkwa11").css({display: "none"})
                });
                $("#9").click(function(){
-                    $(this).css({backgroundColor: "skyblue"})
-                    $("#2,#3,#4,#5,#6,#7,#8,#1,#10,#11,#12").css({backgroundColor: "white"})
+                    $(this).css({backgroundColor: "blue"})
+                    $("#2,#3,#4,#5,#6,#7,#8,#1,#10,#11").css({backgroundColor: "white"})
                     $("#linkwa9").css({display: "block"})
-                    $("#linkwa2,#linkwa3,#linkwa4,#linkwa5,#linkwa6,#linkwa7,#linkwa8,#linkwa1,#linkwa10,#linkwa11,#linkwa12").css({display: "none"})
+                    $("#linkwa2,#linkwa3,#linkwa4,#linkwa5,#linkwa6,#linkwa7,#linkwa8,#linkwa1,#linkwa10,#linkwa11").css({display: "none"})
                });
                $("#10").click(function(){
-                    $(this).css({backgroundColor: "skyblue"})
-                    $("#2,#3,#4,#5,#6,#7,#8,#9,#1,#11,#12").css({backgroundColor: "white"})
+                    $(this).css({backgroundColor: "blue"})
+                    $("#2,#3,#4,#5,#6,#7,#8,#9,#1,#11").css({backgroundColor: "white"})
                     $("#linkwa10").css({display: "block"})
-                    $("#linkwa2,#linkwa3,#linkwa4,#linkwa5,#linkwa6,#linkwa7,#linkwa8,#linkwa9,#linkwa1,#linkwa11,#linkwa12").css({display: "none"})
+                    $("#linkwa2,#linkwa3,#linkwa4,#linkwa5,#linkwa6,#linkwa7,#linkwa8,#linkwa9,#linkwa1,#linkwa11").css({display: "none"})
                });
                $("#11").click(function(){
-                    $(this).css({backgroundColor: "skyblue"})
-                    $("#2,#3,#4,#5,#6,#7,#8,#9,#10,#1,#12").css({backgroundColor: "white"})
+                    $(this).css({backgroundColor: "blue"})
+                    $("#2,#3,#4,#5,#6,#7,#8,#9,#10,#1").css({backgroundColor: "white"})
                     $("#linkwa11").css({display: "block"})
-                    $("#linkwa2,#linkwa3,#linkwa4,#linkwa5,#linkwa6,#linkwa7,#linkwa8,#linkwa9,#linkwa10,#linkwa1,#linkwa12").css({display: "none"})
+                    $("#linkwa2,#linkwa3,#linkwa4,#linkwa5,#linkwa6,#linkwa7,#linkwa8,#linkwa9,#linkwa10,#linkwa1").css({display: "none"})
                });
-               $("#12").click(function(){
-                    $(this).css({backgroundColor: "skyblue"})
-                    $("#2,#3,#4,#5,#6,#7,#8,#9,#10,#1,#11").css({backgroundColor: "white"})
-                    $("#linkwa12").css({display: "block"})
-                    $("#linkwa2,#linkwa3,#linkwa4,#linkwa5,#linkwa6,#linkwa7,#linkwa8,#linkwa9,#linkwa10,#linkwa1,#linkwa11").css({display: "none"})
+               $(".icon-menu").click(function(){
+                    $("#layar-depan-header,#layar-depan-main,#layar-depan-footer").css({display: "block"})
+                    $(".daftar-link").animate({width: "toggle"})
+               });
+               $("#layar-depan-header,#layar-depan-main,#layar-depan-footer").click(function(){
+                    $("#layar-depan-header,#layar-depan-main,#layar-depan-footer").css({display: "none"})
+                    $(".daftar-link").animate({width: "toggle"})
                });
           })
      </script>
