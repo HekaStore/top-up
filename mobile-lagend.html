@@ -13,19 +13,26 @@
 
      <div class="WEBSITE">
           <header>
-               <div class="container-header">
-                    <div class="brand"><img src="logostore.webp" alt="Heka Store" class="logostore"></div>
-                    <div class="menu-link">
+               <div class="container-header">  
+                    <div class="menu-link"> 
                          <div class="icon-menu">
                               <div class="garis-horizon"></div>
                               <div class="garis-horizon"></div>
                               <div class="garis-horizon"></div>
                          </div>
                          <div class="daftar-link">
-                              <a href="snake.html" class="link-menu">Ular</a>
-                              <a href="#" class="link-menu">Webku</a>
-                              <a href="#" class="link-menu">Apl Beruang</a>
+                              <div class="brand-side-bar"><img src="logostore.webp" alt="" class="logo-side-bar"></div>
+                              <a href="index.html" class="link-menu"><b>Beranda</b></a>
+                              <a href="contact.html" class="link-menu"><b>Contact</b></a>
+                              <a href="about.html" class="link-menu"><b>About</b></a>
+                              <a href="serigala.html" class="link-menu"><b>Kode Diskon</b></a>
+                              <a href="free-fire.html" class="link-menu"><i>Top Up Free Fire</i></a>
+                              <a href="cod.html" class="link-menu"><i>Top Up Call Of Duty</i></a>
                          </div>
+                    </div>
+                    <div class="brand"><img src="logostore.webp" alt="Heka Store" class="logostore"></div>
+                      <div class="login">
+                         <button class="signup"><a href="" style="color: white;text-decoration: none;">Sign-up<br><img src="signup.svg"  alt="" width="20" height="20"></a></button>
                     </div>
                </div>
           </header>
@@ -210,6 +217,10 @@
           <p align="center" class="copy">Copyright 2022 Heka Store</p>
      </footer>
 
+     <div id="layar-depan-header"></div>
+     <div id="layar-depan-main"></div>
+     <div id="layar-depan-footer"></div>
+
      <script src="jquery.js"></script>
      <script src="ml.js"></script>
      <script>
@@ -289,6 +300,14 @@
                     $("#linkwa12").css({display: "block"})
                     $("#linkwa2,#linkwa3,#linkwa4,#linkwa5,#linkwa6,#linkwa7,#linkwa8,#linkwa9,#linkwa10,#linkwa1,#linkwa11").css({display: "none"})
                });
+               $(".icon-menu").click(function(){
+                    $("#layar-depan-header,#layar-depan-main,#layar-depan-footer").css({display: "block"})
+                    $(".daftar-link").animate({width: "toggle"})
+               })
+               $("#layar-depan-header,#layar-depan-main,#layar-depan-footer").click(function(){
+                    $("#layar-depan-header,#layar-depan-main,#layar-depan-footer").css({display: "none"})
+                    $(".daftar-link").animate({width: "toggle"})
+               })
           })
      </script>
      
