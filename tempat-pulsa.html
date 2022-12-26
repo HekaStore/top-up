@@ -119,16 +119,19 @@
           </div><hr>
           <p align="center" class="copy">Copyright 2022 Heka Store</p>
      </footer>
+    <div id="layar-depan-header"><div>
+    <div id="layar-depan-main"><div>
+    <div id="layar-depan-footer"><div>
 
      <script src="jquery.js"></script>
      <script>
           $(document).ready(function(){
                $(".icon-menu").click(function(){
-                    $("#layar-depan-header,#layar-depan-main").css({display: "block"})
+                    $("#layar-depan-header,#layar-depan-main,#layar-depan-footer").css({display: "block"})
                     $(".daftar-link").animate({width: "toggle"})
                })
-               $("#layar-depan-header,#layar-depan-main").click(function(){
-                    $("#layar-depan-header,#layar-depan-main").css({display: "none"})
+               $("#layar-depan-header,#layar-depan-main,#layar-depan-footer").click(function(){
+                    $("#layar-depan-header,#layar-depan-main,#layar-depan-footer").css({display: "none"})
                     $(".daftar-link").animate({width: "toggle"})
                })
           })
