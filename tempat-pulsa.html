@@ -12,19 +12,24 @@
 
      <div>
           <header>
-               <div class="container-header">
-                    <div class="brand"><img src="logostore.webp" alt="Heka Store" class="logostore"></div>
-                    <div class="menu-link">
+               <div class="container-header">  
+                    <div class="menu-link"> 
                          <div class="icon-menu">
                               <div class="garis-horizon"></div>
                               <div class="garis-horizon"></div>
                               <div class="garis-horizon"></div>
                          </div>
                          <div class="daftar-link">
-                              <a href="snake.html" class="link-menu">Ular</a>
-                              <a href="#" class="link-menu">Webku</a>
-                              <a href="#" class="link-menu">Apl Beruang</a>
+                              <div class="brand-side-bar"><img src="logostore.webp" alt="" class="logo-side-bar"></div>
+                              <a href="index.html" class="link-menu">Beranda</a>
+                              <a href="contact.html" class="link-menu">Contact</a>
+                              <a href="about.html" class="link-menu">About</a>
+                              <a href="serigala.html" class="link-menu">Kode Diskon</a>
                          </div>
+                    </div>
+                    <div class="brand"><img src="logostore.webp" alt="Heka Store" class="logostore"></div>
+                      <div class="login">
+                         <button class="signup"><a href="" style="color: white;text-decoration: none;">Sign-up<br><img src="signup.svg"  alt="" width="20" height="20"></a></button>
                     </div>
                </div>
           </header>
@@ -38,7 +43,7 @@
                               <img src="diamond-svgrepo-com.svg" class="logo" alt="" width="30" height="30">
                               <figcaption class="namaside1">Top Up</figcaption>
                          </a>
-                         <a href="#" class="games">
+                         <a href="#" onclick="alert('Belum Tersedia...')" class="games">
                               <img src="konsol.svg" alt="" width="40" height="40">
                               <figcaption class="namaside">Joki</figcaption>
                          </a>
@@ -71,13 +76,13 @@
                          <div class="logoml"><img src="xl.webp" alt="ml" class="ml" height="64" width="64"></div>
                          <figcaption class="namaml">XL</figcaption>
                          <label for="diamond" class="dmml">Pulsa</label>
-                         <a href="XL.html" class="linkml">Top Up</a>
+                         <a href=".html" class="linkml">Top Up</a>
                     </div>
                     <div class="mobilelegend">
                          <div class="logoml"><img src="telkonsel.webp" alt="ml" class="ml" height="64" width="64"></div>
                          <figcaption class="namaml">Telkomsel</figcaption>
                          <label for="diamond" class="dmml">Pulsa</label>
-                         <a href="TELKOMSEL.html" class="linkml">Top Up</a>
+                         <a href=".html" class="linkml">Top Up</a>
                     </div>
                     </div>
      
@@ -119,12 +124,17 @@
      <script>
           $(document).ready(function(){
                $(".icon-menu").click(function(){
-                    $(".daftar-link").toggle(500)
+                    $("#layar-depan-header,#layar-depan-main").css({display: "block"})
+                    $(".daftar-link").animate({width: "toggle"})
+               })
+               $("#layar-depan-header,#layar-depan-main").click(function(){
+                    $("#layar-depan-header,#layar-depan-main").css({display: "none"})
+                    $(".daftar-link").animate({width: "toggle"})
                })
           })
      </script>
 
-     </footer> 
+     </footer>
      
 </body>
 </html>
