@@ -8,6 +8,7 @@
     font-family: 'lato';
 }
 body {
+    font-family: 'lato';
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -21,23 +22,22 @@ header {
     width: 100%;
 }
 .container-header {
-    background: linear-gradient(45deg,purple,blue);
+    background: linear-gradient(45deg, #7b58ee,#1e90ff);
     height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .brand {
-    height: 50px;
-    width: auto;
     display: flex;
-    margin-left: -50px;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    height: 60px;
+    width: 40%;
 }
 .logostore {
-    height: 50px;
-    width: 100%;
+    width:100%;
+    height: 60px;
 }
 .icon-menu {
     display: flex;
@@ -45,40 +45,75 @@ header {
     justify-content: center;
     align-items: center;
     width: 50px;
-    margin-right: 10px;
     height: 50px;
     cursor: pointer;
 }
 .garis-horizon {
-    background-color: black;
+    background-color: white;
     border-radius: 10px;
-    padding: 3px;
-    width: 35px;
-    margin: 3px 0 3px 0;
+    padding: 2px;
+    width: 25px;
+    margin: 2px 0 2px 0;
 }
 .daftar-link {
     display: none;
+    height: 100vh;
+    background-color: whitesmoke;
     position: absolute;
-    right: 55px;
-    top: 20px;
+    left: 0;
+    width: 200px;
+    top: 0;
 }
 .link-menu {
     display: block;
     text-decoration: none;
     color: black;
     padding: 6px;
-    width: 100px;
+    width: 100%;
     background-color: whitesmoke;
+}
+.link-menu:hover {
+    background-color: lightgray;
+}
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    cursor: pointer;
+    height: 60px;
+    height: 60px;
+}
+.signup {
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    color: white;
+    border: none;
+    background: transparent;
+    font-weight: bold;
+    font-size: 15px ;
+}
+.brand-side-bar {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+
+}
+.logo-side-bar {
+    width: 100%;
 }
 /*MAIN*/
 main {
+    background-color: #f0f0f0;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 60px;
     width: 100%;
     height: auto;
-    font-family: 'lato';
+    padding-bottom: 20px;
 }
 .brand-main {
     width: 50%;
@@ -87,22 +122,17 @@ main {
     flex-direction: column;
 }
 .cara p {
-    font-family: 'lato';
     font-weight: bold;
     filter: opacity(90%);
 }
 .alert {color: red;}
 #caranya {
-    font-family: 'lato';
     font-weight: bold;
     font-size: large;
     filter: opacity(95%);
 }
 .mllogo {
     width: 100%;
-}
-h1 {
-    font-family: 'lato';
 }
 h2 {
     margin-left: 10px;
@@ -115,6 +145,8 @@ h2 {
     justify-content: space-around;
     width: 90%;
     margin: 10px 0 10px 0;
+    padding: 10px;
+    border: 1px solid;
 }
 .dm-no {
     border-radius: 15px;
@@ -126,6 +158,7 @@ h2 {
     margin-top: 15px;
     width: 150px;
     border: 2px solid blue;
+    cursor: pointer;
 }
 .harga {
     font-size: 15px;
@@ -158,7 +191,6 @@ h2 {
 
 /*FOOTER*/
 footer {
-    margin-top: 20px;
     background-color: #0099ff;
     font-family: 'lato';
 }
@@ -224,8 +256,40 @@ hr {
     padding: 15px;
     color: #fff;
 }
+#layar-depan-header {
+    height: 100vh;
+    width: 100%;
+    display: none;
+    position: absolute;
+    background-color: black;
+    filter: opacity(50%);
+}
+#layar-depan-main {
+    height: 100vh;
+    width: 100%;
+    display: none;
+    top: 100%;
+    position: absolute;
+    background-color: black;
+    filter: opacity(50%);
+}
+#layar-depan-footer {
+    height: 100vh;
+    width: 100%;
+    display: none;
+    top: 200%;
+    position: absolute;
+    background-color: black;
+    filter: opacity(50%);
+}
 @media screen and (max-width: 500px) {
     .brand-main {
+        width: 100%;
+    }
+    .login {
+        width: 25%;
+    }
+    .brand {
         width: 100%;
     }
     .container-footer {
