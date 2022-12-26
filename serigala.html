@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="serigala.css">
+</head>
+<body>
+
+  <div class="container">
+    <img src="serigala.jpg" alt="" class="foto">
+    <audio id="lagu">
+      <source src="jika.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <div class="tombol">
+    <button id="btn" onclick="btn()">Click</button>
+  </div>
+
+  <script src="jquery.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#btn").click(function(){
+        $(".container").css({display: "block"})
+        $(this).css({display: "none"})
+      })
+    })
+     var x = document.getElementById('lagu');
+
+     function btn(){
+      x.play();
+     }
+  </script>
+   
+  
+  
+</body>
+</html>
