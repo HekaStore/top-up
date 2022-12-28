@@ -15,3 +15,6 @@ document.getElementById('linkwa14').style.display = "none";
 document.getElementById('linkwa15').style.display = "none";
 document.getElementById('linkwa16').style.display = "none";
 document.getElementById('linkwa17').style.display = "none";
+document.getElementById('linkwa18').style.display = "none";
+document.getElementById('linkwa19').style.display = "none";
+document.getElementById('linkwa20').style.display = "none";
