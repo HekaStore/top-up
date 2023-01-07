@@ -156,6 +156,9 @@ main {
     text-decoration: none;
     filter: grayscale(100%);
 }
+.kupon,.games {
+    filter: opacity(50%);
+}
 .namaside {
     margin-left: -1px;
     margin-top: -3px;
