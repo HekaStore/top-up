@@ -1,0 +1,368 @@
+@font-face {
+     font-family: 'lato';
+      src: url('Lato-Regular.ttf');
+  }
+  
+  *, html _{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+  body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100vh;
+      font-family: 'lato';
+  }
+  /*HEADER*/
+  header {
+     z-index: 1;
+     position: fixed;
+     width: 100%;
+ }
+ .container-header {
+     background: linear-gradient(45deg, #7b58ee,#1e90ff);
+     height: 60px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ .brand {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     height: 60px;
+     width: 40%;
+ }
+ .logostore {
+     width:100%;
+     height: 60px;
+ }
+ .icon-menu {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 50px;
+     height: 50px;
+     cursor: pointer;
+ }
+ .garis-horizon {
+     background-color: white;
+     border-radius: 10px;
+     padding: 2px;
+     width: 25px;
+     margin: 2px 0 2px 0;
+ }
+ .daftar-link {
+     display: none;
+     height: 100vh;
+     background-color: #f0f0f0;
+     position: absolute;
+     left: 0;
+     width: 200px;
+     top: 0;
+ }
+ .link-menu {
+     display: block;
+     text-decoration: none;
+     color: black;
+     padding: 6px;
+     width: 100%;
+     background-color: whitesmoke;
+ }
+ .link-menu:hover {
+     background-color: lightgray;
+ }
+ .login {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 10%;
+     cursor: pointer;
+     height: 60px;
+     height: 60px;
+ }
+ .signup {
+     text-align: center;
+     height: 40px;
+     width: 100%;
+     color: white;
+     border: none;
+     background: transparent;
+     font-weight: bold;
+     font-size: 15px ;
+ }
+ .brand-side-bar {
+     display: flex;
+     align-items: center;
+     height: 100px;
+     width: 100%;
+ 
+ }
+ .logo-side-bar {
+     width: 100%;
+ }
+  /*MAIN*/
+ main {
+     padding-bottom: 20px;
+      background-color: whitesmoke;
+      display: flex;
+      flex-direction: column;
+  }
+  .brand-main {
+      
+      display: flex;
+      justify-content: center;
+      margin-top: 60px;
+      width: 100%;
+      height: auto;
+  }
+  
+  .logomain {
+      width: 80%;
+      height: 350px;
+  }
+  
+  .wadah-side {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+  .sidelogo {
+      display: flex;
+      width: 80%;
+      background-color: white;
+      margin: auto;
+      height: 70px;
+  }
+  .games,.kupon,.diamond,.wallet {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 50%;
+      color: black;
+      text-decoration: none;
+      filter: grayscale(100%);
+  }
+  .diamond,.kupon,.wallet {
+     filter: opacity(50%);
+ }
+  .namaside {
+      margin-left: -1px;
+      margin-top: -3px;
+      font-size: small;
+      font-weight: bold;
+  }
+  .diamond {
+      padding-top: 10px;
+      font-size: small;
+      font-weight: bold;
+      
+  }
+  .games {
+      border-bottom: 3px solid red;
+  }
+  .mobile-legend {
+      border: 1px solid;
+      height: 100px;
+      width: 100px;
+  }
+  .top-up {
+      display: flex;
+      align-items: center;
+      margin: 10px 0 10px 150px;
+      font-weight: bold;
+  }
+  .garis {
+      width: 35px;
+      height: 8px;
+      border-radius: 10px;
+      background-color: orangered;
+  }
+  .mobilelegend {
+      display: flex;
+      border-radius: 15px;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+      background-color: white;
+      width: 20%;
+      margin-left: 28px;
+      height: 160px;
+      box-shadow: 0px 0px 10px black;
+  }
+  .ml {
+      margin-top: 10px;
+      border-radius: 10px;
+  }
+  .namaml {
+      font-size: small;
+ 
+      font-weight: bold;
+  }
+  .dmml {
+      font-size: small;
+      margin-bottom: 5px;
+      filter: opacity(59%);
+  }
+  .linkml {
+ 
+      font-weight: bold;
+      color: black;
+      text-decoration: none;
+      padding: 5px 75px 5px 75px;
+      background-color: lightblue;
+      border-radius: 15px;
+  }
+  .wadah-topup {
+      margin-left: 120px;
+      display: flex;
+      width: 90%;
+      flex-wrap: wrap;
+  }
+  /*FOOTER*/
+ footer {
+      background-color: #0099ff;
+ 
+  }
+  .container-footer {
+      margin: 50px 100px 50px 100px;
+      display: flex;
+      flex-wrap: wrap;
+  }
+  h2 {
+      color: #fff;
+  }
+  .brand-footer {
+      margin-left: -50px;
+  }
+  .logostore2 {
+      height: 50px;
+      width: 100%;
+      margin-bottom: 10px;
+  }
+  .metode {
+      margin-left: 20px;
+      margin-top: 25px;
+      display: inline-block;
+  }
+  .logostore3 {
+      background-color: #fff;
+      height: 50px;
+  }
+  .tentang {
+      display: flex;
+      flex-wrap: wrap;
+      width: 400px;
+  }
+  .pfot {
+      color: #fff;
+  }
+  hr {
+      border: 1px solid black;
+  }
+  .link-support {
+      margin-top: 5px;
+      margin-left: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+  }
+  .support {
+      margin-left: 5px;
+      padding: 5px 5px 2px 5px;
+  }
+  .support:hover {
+      transition: .3s;
+      background-color: white;
+      border-radius: 10px;
+  }
+  .logoig:hover {
+      transition: .3s;
+      background-color: white;
+      border-radius: 10px;
+  }
+  .copy {
+      padding: 15px;
+      color: #fff;
+  }
+  #layar-depan-header {
+     height: 100vh;
+     width: 100%;
+     display: none;
+     position: absolute;
+     background-color: black;
+     filter: opacity(50%);
+ }
+ #layar-depan-main {
+     height: 100vh;
+     width: 100%;
+     display: none;
+     top: 100%;
+     position: absolute;
+     background-color: black;
+     filter: opacity(50%);
+ }
+ #layar-depan-footer {
+     height: 100vh;
+     width: 100%;
+     display: none;
+     top: 200%;
+     position: absolute;
+     background-color: black;
+     filter: opacity(50%);
+ }
+  @media screen and (max-width: 700px) {
+      .logomain {
+          width: 80%;
+          height: 200px;
+      }
+      .top-up {
+          margin-left: 100px;
+      }
+      .sidelogo {
+          width: 80%;
+      }
+      .linkml {
+          padding: 5px 30px 5px 30px;
+      }
+  }
+  @media screen and (max-width: 500px) {
+     .login {
+         width: 25%;
+     }
+     .brand {
+         width: 100%;
+     } 
+     .mobilelegend {
+          margin: 15px;
+          width: 170px;
+      }
+      .container-footer {
+          margin: 25px 50px 25px 50px;
+      }
+      .logomain {
+          width: 100%;
+          height: 190px;
+      }
+      .top-up {
+          margin-left: 50px;
+      }
+      .sidelogo {
+          width: 100%;
+      }
+      .wadah-topup {
+           width: 100%;
+           margin-left: 0px;
+      }
+      .mobilelegend {
+           width: 40%;
+      }
+      
+ 
+      
+  }
+  

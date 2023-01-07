@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Top Up - Heka Store</title>
+     <link rel="stylesheet" href="index.css">
+     <link rel="shortcut icon" href="logoweb.webp">
+     <link rel="preload" as="image" href="mf.webp">
+</head>
+<body>
+
+     <div class="WEBSITE">
+          <header>
+          <div class="container-header">  
+               <div class="menu-link"> 
+                    <div class="icon-menu">
+                         <div class="garis-horizon"></div>
+                         <div class="garis-horizon"></div>
+                         <div class="garis-horizon"></div>
+                    </div>
+                    <div class="daftar-link">
+                         <div class="brand-side-bar"><img src="logostore.webp" alt="" class="logo-side-bar"></div>
+                         <a href="index.html" class="link-menu">Beranda</a>
+                         <a href="contact.html" class="link-menu">Contact</a>
+                         <a href="about.html" class="link-menu">About</a>
+                         <a href="serigala.html" class="link-menu">Kode Diskon</a>
+                    </div>
+               </div>
+               <div class="brand"><img src="logostore.webp" alt="Heka Store" class="logostore"></div>
+                 <div class="login">
+                    <button class="signup"><a href="" style="color: white;text-decoration: none;">Sign-up<br><img src="signup.svg"  alt="" width="20" height="20"></a></button>
+               </div>
+          </div>
+     </header>
+
+     <main id="main">
+               <div class="brand-main">
+                    <img src="mf.webp" alt="logo" class="logomain">
+               </div>
+                    <div class="sidelogo">
+                         <a href="index.html" class="diamond">
+                              <img src="diamond-svgrepo-com.svg" class="logo" alt="" width="30" height="30">
+                              <figcaption class="namaside1">Top Up</figcaption>
+                         </a>
+                         <a href="tempat-pulsa.html" class="kupon">
+                              <img src="handphone.svg" alt="" width="40" height="40" style="margin: 5px 0 5px 0;">
+                              <figcaption class="namaside">Pulsa</figcaption>
+                         </a>
+                         <a href="listrik.html" class="games">
+                              <img src="pln.webp" alt="" width="40" height="40" style="margin: 5px 0 5px 0;">
+                              <figcaption class="namaside">PLN</figcaption>
+                         </a>
+                         <a href="tempat-wallet.html" class="games">
+                              <img src="wallet.webp" alt="" width="40" height="40" style="margin: 5px 0 5px 0;">
+                              <figcaption class="namaside">E-Wallet</figcaption>
+                         </a>
+                         
+                    </div>
+
+                    <div class="top-up">
+                         <span class="garis"></span>&emsp;
+                         <label for="Top Up">Game</label>
+                    </div>
+                    
+                    <div class="wadah-topup">
+                          <div class="mobilelegend">
+                         <div class="logoml"><img src="logoml.webp" alt="ml" class="ml"></div>
+                         <figcaption class="namaml">DANA</figcaption>
+                         <label for="diamond" class="dmml">Saldo</label>
+                         <a href="dana.html" class="linkml">Top Up</a>
+                    </div>
+
+                    <div class="mobilelegend">
+                         <div class="logoml"><img src="logoff2.webp" alt="ml" class="ml" height="64" width="64"></div>
+                         <figcaption class="namaml">OVO</figcaption>
+                         <label for="diamond" class="dmml">Saldo</label>
+                         <a href="ovo.html" class="linkml">Top Up</a>
+                    </div>
+                    
+                    </div>
+               
+                    
+                   
+     </main>
+     </div>
+    
+
+     <footer>
+          <div class="container-footer">
+               <div class="tentang">
+                    <div class="brand-footer"><img src="logostore.webp" alt="store" class="logostore2"></div>
+               <div class="paragraf">
+                    <p class="pfot">Supplier Top Up game online dan voucher termurah, terpercaya, tercepat di Indonesia. Tersedia berbagai pembayaran, mulai dari CASH dan PULSA</p><br>
+                    <p class="pfot">Ikuti Kami</p>
+                    <div class="link-support">
+                    <a href="https://www.tiktok.com/@far.id9" class="support"><img src="tt.webp" alt="" width="32" height="32"></a>     
+                    <a href="https://www.instagram.com/a.alfan_1125/?next=%2F"><img src="ig.webp" alt="" width="32" height="32" class="logoig"></a>
+                    <a href="https://www.youtube.com/channel/UCv-GLNZD1i3MkB4slWTLbow" class="support"><img src="yt.svg" alt=""></a>
+               </div>
+                    
+               </div>
+               </div>
+               <div class="pembayaran">
+                    <h2>Pembayaran</h2>
+                    <marquee behavior="" direction="right">
+                         <div class="bayar"></div>
+                         <div class="metode"><img src="Cash.webp" alt="" class="logostore3"></div>
+                         <div class="metode"><img src="logodana.webp" alt="" class="logostore3"></div>
+                    </marquee>
+               </div>
+               
+          </div><hr>
+          <p align="center" class="copy">Copyright 2022 Heka Store</p>
+     </footer>
+
+     <div id="layar-depan-header"></div>
+     <div id="layar-depan-main"></div>
+
+     <script src="jquery.js"></script>
+     <script>
+          
+          $(document).ready(function(){
+               $(".icon-menu").click(function(){
+                    $("#layar-depan-header,#layar-depan-main").css({display: "block"})
+                    $(".daftar-link").animate({width: "toggle"})
+               })
+               $("#layar-depan-header,#layar-depan-main").click(function(){
+                    $("#layar-depan-header,#layar-depan-main").css({display: "none"})
+                    $(".daftar-link").animate({width: "toggle"})
+               })
+          })
+     </script>
+     
+</body>
+</html>
