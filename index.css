@@ -350,7 +350,7 @@ hr {
     display: flex;
     flex-direction: column;
 }
-h2 {
+.info-h2 {
     color: red;
     text-align: center;
     letter-spacing: 2px;
