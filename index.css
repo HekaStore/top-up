@@ -316,6 +316,63 @@ hr {
     background-color: black;
     filter: opacity(50%);
 }
+/*INFO*/
+#info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+.hitam {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    filter: opacity(50%);
+}
+.info2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: auto;
+    background-color: white;
+    width: 70%;
+}
+.isi-info {
+    margin: 20px 0 20px 0;
+    background-color: #0099ff;
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+h2 {
+    color: red;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.paragraf-info {
+    font-weight: bold;
+    margin: 0 30px 30px 30px;
+}
+.tombol-tutup-info {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#tombol-tutup {
+    font-family: "lato";
+    padding: 10px;
+    border: none;
+    background-color: lime;
+}
 @media screen and (max-width: 700px) {
     .logomain {
         width: 80%;
@@ -335,7 +392,7 @@ hr {
     .login {
         width: 25%;
     }
-    .brand {
+    .brand,.info,.info2 {
         width: 100%;
     }
     .mobilelegend {
