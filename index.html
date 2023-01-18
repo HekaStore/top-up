@@ -163,8 +163,11 @@
                $("#layar-depan-header,#layar-depan-main").click(function(){
                     $("#layar-depan-header,#layar-depan-main").css({display: "none"})
                     $(".daftar-link").animate({width: "toggle"})
+               });
+               $("#tombol-tutup").click(function(){
+                    $("#info").toggle(500);
                })
-          })
+          });
      </script>
      
 </body>
