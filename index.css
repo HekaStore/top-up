@@ -233,7 +233,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
 }
-h2 {
+.footer-h2 {
     color: #fff;
 }
 .brand-footer {
@@ -350,7 +350,7 @@ hr {
     display: flex;
     flex-direction: column;
 }
-h2 {
+.info-h2 {
     color: red;
     text-align: center;
     letter-spacing: 2px;
