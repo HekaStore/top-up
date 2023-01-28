@@ -10,16 +10,18 @@
      <link rel="preload" as="image" href="mf.webp">
 </head>
 <body>
+
      <div id="info">
           <div class="hitam"></div>
           <div class="info2">
                <div class="isi-info">
-                  <h2 class="info-h2">PEMBERITAHUAN<br>PENTING!!!</h2>
+                  <h2>PEMBERITAHUAN<br>PENTING!!!</h2>
                   <div class="paragraf-info">
-                    <p>1. Saat anda menekan tombol beli, anda akan diarahkan ke nomor Admin untuk konfirmasi lebih lanjut,</p>
-                    <p>2. Ketika mau membeli diusahakan bayar dulu,</p>
-                    <p>3. Kalau mau mengutang, Admin akan memberikan waktu 2 hari. Kalau lebih dari 2 hari harga <br>&emsp;&nbsp;akan naik 1.000 perharinya, </p>
-                    <p>4. Jika mau bertanya silahkan tekan garis 3 diatas pojok kiri dan pilih "Contact",</p>
+                    <p>1. Saat anda menekan tombol beli, anda akan diarahkan ke nomor Admin untuk konfirmasi lebih lanjut,</p><br>
+                    <p>2. Ketika mau membeli diusahakan bayar dulu,</p><br>
+                    <p>3. Proses pengiriman 1-10 Menit</p><br>
+                    <p>4. Kalau mau mengutang, Admin akan memberikan waktu 2 hari. Kalau lebih dari 2 hari harga <br>akan naik 1.000 perharinya, </p><br>
+                    <p>5. Jika mau bertanya silahkan tekan garis 3 diatas pojok kiri dan pilih "Contact",</p>
                   </div>
                   
                   
@@ -39,7 +41,6 @@
           
           
      </div>
-
      <div class="WEBSITE">
           <header>
           <div class="container-header">  
@@ -51,7 +52,7 @@
                     </div>
                     <div class="daftar-link">
                          <div class="brand-side-bar"><img src="logostore.webp" alt="" class="logo-side-bar"></div>
-                         <a href="index.html" class="link-menu">Beranda</a>
+                         <a href="beranda.html" class="link-menu">Beranda</a>
                          <a href="contact.html" class="link-menu">Contact</a>
                          <a href="about.html" class="link-menu">About</a>
                          <a href="serigala.html" class="link-menu">Kode Diskon</a>
@@ -149,6 +150,9 @@
           <p align="center" class="copy">Copyright 2022 Heka Store</p>
      </footer>
 
+
+     
+
      <div id="layar-depan-header"></div>
      <div id="layar-depan-main"></div>
 
@@ -165,7 +169,7 @@
                     $(".daftar-link").animate({width: "toggle"})
                });
                $("#tombol-tutup").click(function(){
-                    $("#info").toggle(500);
+                    $("#info").css({display: "none"})
                })
           });
      </script>
