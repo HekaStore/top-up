@@ -350,7 +350,7 @@ hr {
     display: flex;
     flex-direction: column;
 }
-.info-h2 {
+h2 {
     color: red;
     text-align: center;
     letter-spacing: 2px;
@@ -372,7 +372,6 @@ hr {
     padding: 10px;
     border: none;
     background-color: lime;
-    cursor: pointer;
 }
 @media screen and (max-width: 700px) {
     .logomain {
