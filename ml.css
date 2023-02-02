@@ -299,3 +299,9 @@ hr {
         width: 100%;
     }
 }
+@media screen and (max-width: 400px) {
+    .dm-no{
+        height: 120px;
+        width: 130px;
+    }
+}
