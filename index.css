@@ -34,7 +34,6 @@ header {
     background: linear-gradient(45deg, #7b58ee,#1e90ff);
     height: 60px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 .brand {
@@ -83,25 +82,6 @@ header {
 }
 .link-menu:hover {
     background-color: lightgray;
-}
-.login {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 10%;
-    cursor: pointer;
-    height: 60px;
-    height: 60px;
-}
-.signup {
-    text-align: center;
-    height: 40px;
-    width: 100%;
-    color: white;
-    border: none;
-    background: transparent;
-    font-weight: bold;
-    font-size: 15px ;
 }
 .brand-side-bar {
     display: flex;
@@ -413,4 +393,10 @@ hr {
         width: 100%;
     }
     
+}
+@media screen and (max-width: 350px) {
+    .mobilelegend{
+        margin: 10px;
+        width: 130px;
+    }
 }
