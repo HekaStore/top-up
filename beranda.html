@@ -11,8 +11,6 @@
 </head>
 <body>
           
-          
-     </div>
      <div class="WEBSITE">
           <header>
           <div class="container-header">  
@@ -24,16 +22,13 @@
                     </div>
                     <div class="daftar-link">
                          <div class="brand-side-bar"><img src="logostore.webp" alt="" class="logo-side-bar"></div>
-                         <a href="index.html" class="link-menu">Beranda</a>
+                         <a href="beranda.html" class="link-menu">Beranda</a>
                          <a href="contact.html" class="link-menu">Contact</a>
                          <a href="about.html" class="link-menu">About</a>
                          <a href="serigala.html" class="link-menu">Kode Diskon</a>
                     </div>
                </div>
                <div class="brand"><img src="logostore.webp" alt="Heka Store" class="logostore"></div>
-                 <div class="login">
-                    <button class="signup"><a href="" style="color: white;text-decoration: none;">Sign-up<br><img src="signup.svg"  alt="" width="20" height="20"></a></button>
-               </div>
           </div>
      </header>
 
@@ -81,11 +76,42 @@
                          <a href="free-fire.html" class="linkml">Top Up</a>
                     </div><br>
                     <div class="mobilelegend">
+                         <div class="logoml"><img src="efootball.webp" alt="ml" class="ml" height="64" width="64"></div>
+                         <figcaption class="namaml">eFootball</figcaption>
+                         <label for="diamond" class="dmml">Coins</label>
+                         <a href="efootball.html" class="linkml">Top Up</a>
+                    </div>
+                    <div class="mobilelegend">
+                         <div class="logoml"><img src="pubg.webp" alt="ml" class="ml" height="64" width="64"></div>
+                         <figcaption class="namaml">PUBG Mobile</figcaption>
+                         <label for="diamond" class="dmml">UC</label>
+                         <a href="pubg.html" class="linkml">Top Up</a>
+                    </div>
+                    <div class="mobilelegend">
                          <div class="logoml"><img src="logocod.webp" alt="ml" class="ml" height="64" width="64"></div>
                          <figcaption class="namaml">Call Of Duty</figcaption>
                          <label for="diamond" class="dmml">CP</label>
                          <a href="cod.html" class="linkml">Top Up</a>
                     </div>
+                    <div class="mobilelegend">
+                         <div class="logoml"><img src="fifa.webp" alt="ml" class="ml" height="64" width="64"></div>
+                         <figcaption class="namaml">FIFA</figcaption>
+                         <label for="diamond" class="dmml">Points</label>
+                         <a href="fifa.html" class="linkml">Top Up</a>
+                    </div>
+                    <div class="mobilelegend">
+                         <div class="logoml"><img src="genshin.webp" alt="ml" class="ml" height="64" width="64"></div>
+                         <figcaption class="namaml">Genshin Impact</figcaption>
+                         <label for="diamond" class="dmml">Crystals</label>
+                         <a href="genshin.html" class="linkml">Top Up</a>
+                    </div>
+                    <div class="mobilelegend">
+                         <div class="logoml"><img src="supersus.webp" alt="ml" class="ml" height="64" width="64"></div>
+                         <figcaption class="namaml">Supersus</figcaption>
+                         <label for="diamond" class="dmml">Golden Stars</label>
+                         <a href="supersus.html" class="linkml">Top Up</a>
+                    </div>
+                    
                     </div>
                
                     
@@ -99,7 +125,7 @@
                <div class="tentang">
                     <div class="brand-footer"><img src="logostore.webp" alt="store" class="logostore2"></div>
                <div class="paragraf">
-                    <p class="pfot">Supplier Top Up game online dan voucher termurah, terpercaya, tercepat di Indonesia. Tersedia berbagai pembayaran, mulai dari CASH dan PULSA</p><br>
+                    <p class="pfot">Supplier Top Up game online dan voucher termurah, terpercaya, tercepat di Indonesia. Tersedia berbagai pembayaran, mulai dari CASH, Dana, Ovo, Gopay, ShopeePay dan Lain lain</p><br>
                     <p class="pfot">Ikuti Kami</p>
                     <div class="link-support">
                     <a href="https://www.tiktok.com/@far.id9" class="support"><img src="tt.webp" alt="" width="32" height="32"></a>     
@@ -110,11 +136,14 @@
                </div>
                </div>
                <div class="pembayaran">
-                    <h2>Pembayaran</h2>
-                    <marquee behavior="" direction="right">
+                    <h2 class="footer-h2">Pembayaran</h2>
+                    <marquee behavior="" direction="left">
                          <div class="bayar"></div>
                          <div class="metode"><img src="Cash.webp" alt="" class="logostore3"></div>
                          <div class="metode"><img src="logodana.webp" alt="" class="logostore3"></div>
+                         <div class="metode"><img src="metode-ovo.webp" alt="" class="logostore3"></div>
+                         <div class="metode"><img src="metode-gopay.webp" alt="" class="logostore3"></div>
+                         <div class="metode"><img src="metode-shoopepay.webp" alt="" class="logostore3"></div>
                     </marquee>
                </div>
                
@@ -141,7 +170,7 @@
                     $(".daftar-link").animate({width: "toggle"})
                });
                $("#tombol-tutup").click(function(){
-                    $("#info").toggle(500);
+                    $("#info").css({display: "none"})
                })
           });
      </script>
