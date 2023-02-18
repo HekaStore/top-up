@@ -25,13 +25,11 @@ header {
     background: linear-gradient(45deg, #7b58ee,#1e90ff);
     height: 60px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 .brand {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     height: 60px;
     width: 40%;
 }
@@ -74,15 +72,6 @@ header {
 }
 .link-menu:hover {
     background-color: lightgray;
-}
-.login {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 10%;
-    cursor: pointer;
-    height: 60px;
-    height: 60px;
 }
 .signup {
     text-align: center;
@@ -137,20 +126,32 @@ main {
 h2 {
     margin-left: 10px;
 }
-
 .container-nominal {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.judul-nominal {
+    position: absolute;
+    font-weight: bold;
+    font-size: x-large;
+    margin-top: -23px;
+    color: #0099ff;
+}
+.isi-nominal {
     background-color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 90%;
     margin: 10px 0 10px 0;
     padding: 10px;
-    border: 1px solid;
+    padding-top: 30px;
+    border-radius: 20px;
 }
 .dm-no {
+    position: relative;
     border-radius: 15px;
-    font-family: 'lato';
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -299,9 +300,9 @@ hr {
         width: 100%;
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 350px) {
     .dm-no{
-        height: 120px;
-        width: 130px;
+        height: 130px;
+        width: 140px;
     }
 }
