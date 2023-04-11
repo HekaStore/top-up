@@ -152,7 +152,17 @@ body {
     padding: 10px;
     outline: none;
 }
+#server {
+    width: 40%;
+    padding: 10px;
+    outline: none;
+}
 #gameid:focus {
+    border: 2px solid lime;
+    border-radius: 5px;
+    transition: .3s;
+}
+#server:focus {
     border: 2px solid lime;
     border-radius: 5px;
     transition: .3s;
