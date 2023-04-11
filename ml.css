@@ -1,4 +1,4 @@
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,302 +7,469 @@
     src: url('Lato-Regular.ttf');
     font-family: 'lato';
 }
+@font-face {
+    src: url('UrbanJungle.otf');
+    font-family: 'FF';
+}
 body {
     font-family: 'lato';
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    height: auto;
+    width: auto;
     background-color: azure;
 }
 /*HEADER*/
-header {
-    z-index: 1;
-    position: fixed;
-    width: 100%;
-}
 .container-header {
-    background: linear-gradient(45deg, #7b58ee,#1e90ff);
-    height: 60px;
+    z-index: 1;
     display: flex;
     align-items: center;
-}
-.brand {
-    display: flex;
-    flex-wrap: wrap;
+    position: fixed;
     height: 60px;
-    width: 40%;
-}
-.logostore {
-    width:100%;
-    height: 60px;
-}
-.icon-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-}
-.garis-horizon {
-    background-color: white;
-    border-radius: 10px;
-    padding: 2px;
-    width: 25px;
-    margin: 2px 0 2px 0;
-}
-.daftar-link {
-    display: none;
-    height: 100vh;
-    background-color: whitesmoke;
-    position: absolute;
-    left: 0;
-    width: 200px;
-    top: 0;
-}
-.link-menu {
-    display: block;
-    text-decoration: none;
-    color: black;
-    padding: 6px;
     width: 100%;
-    background-color: whitesmoke;
-}
-.link-menu:hover {
-    background-color: lightgray;
-}
-.signup {
-    text-align: center;
-    height: 40px;
-    width: 100%;
-    color: white;
-    border: none;
-    background: transparent;
-    font-weight: bold;
-    font-size: 15px ;
-}
-.brand-side-bar {
-    display: flex;
-    align-items: center;
-    height: 100px;
-    width: 100%;
+    background: linear-gradient(lime,#0099ff);
 
 }
-.logo-side-bar {
-    width: 100%;
+.icon-side-bar {
+    padding: 5px;
+    cursor: pointer;
 }
-/*MAIN*/
-main {
-    background-color: #f0f0f0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 60px;
-    width: 100%;
-    height: auto;
-    padding-bottom: 20px;
-}
-.brand-main {
-    width: 50%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-}
-.cara p {
-    font-weight: bold;
-    filter: opacity(90%);
-}
-.alert {color: red;}
-#caranya {
-    font-weight: bold;
-    font-size: large;
-    filter: opacity(95%);
-}
-.mllogo {
-    width: 100%;
-}
-h2 {
-    margin-left: 10px;
-}
-.container-nominal {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.judul-nominal {
-    position: absolute;
-    font-weight: bold;
-    font-size: x-large;
-    margin-top: -23px;
-    color: #0099ff;
-}
-.isi-nominal {
+.icon-side-bar div {
+    margin: 5px;
+    height: 4px;
+    width: 30px;
     background-color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 10px 0 10px 0;
-    padding: 10px;
-    padding-top: 30px;
     border-radius: 20px;
 }
-.dm-no {
-    position: relative;
-    border-radius: 15px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    height: 130px;
-    margin-top: 15px;
-    width: 150px;
-    border: 2px solid blue;
-    cursor: pointer;
+.logostore {
+    width: 350px;
+    height: 60px;
 }
-.harga {
-    font-size: 15px;
-    padding-left: 20px;
-    filter: opacity(95%);
+.layar-hitam {
+    z-index: 2;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    filter: opacity(50%);
 }
-.dm-no p {
-    margin-left: 10px;
+.side-bar {
+    position: fixed;
+    height: 100vh;
+    width: 200px;
+    background-color: white;
+    z-index: 3;
 }
-.container-nominal img {
-    margin-right: 10px;
-}
-.dm-no:hover {
-    transition: .1s;
-    box-shadow: 0px 0px 15px;
-    filter: opacity(80%);
-}
-.button {
-    font-family: 'lato';
-    font-size: 20px;
-    box-shadow: 3px 2px 3px ;
-    font-weight: bold;
-    border-radius: 10px;
-    margin-top: 10px;
-    padding: 10px 50px 10px 50px;
+.side-bar a {
+    display: block;
+    padding: 5px;
     text-decoration: none;
     color: black;
-    background-color: lime;
+    font-weight: bold;
 }
+.side-bar a:hover {
+    background-color: lightgray;
+}
+.side-bar img {
+    margin: 10px 0 10px 0;
+    height: 50px;
+    width: 200px;
+}
+.down-bar {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    position: relative;
+    top: 60px;
 
-/*FOOTER*/
-footer {
-    background-color: #0099ff;
-    font-family: 'lato';
 }
-.container-footer {
-    margin: 50px 100px 50px 100px;
+.down-bar a {
+    text-decoration: none;
+    color: black;
+    padding: 21px 18px;
+    font-weight: bold;
+    background-color: white;
+    flex-grow: 1;
+}
+.down-bar a:hover {
+    background-color: lightgray;
+    transition: .3s;
+}
+/*MAIN*/
+.container-main {
     display: flex;
-    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+    background-color: azure;
+    top: 90px;
+    position: relative;
 }
-h2 {
-    color: #fff;
+.wadah-cara-beli {
+    height: auto;
 }
-.brand-footer {
-    margin-left: -50px;
+.logostore-main {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 500px;
 }
-.logostore2 {
-    height: 50px;
-    width: 100%;
+.logostore-main img {
+    border-radius: 10px;
+    width: 200px;
+    height: 180px;
+}
+.cara-beli h2 {
+    font-style: italic;
+    text-align: center;
     margin-bottom: 10px;
+    font-size: xx-large;
+    letter-spacing: 2px;
+    color: lightgray;
+    -webkit-text-stroke: 0.1px black;
+    font-family: 'FF';
 }
-.metode {
-    margin-left: 20px;
-    margin-top: 25px;
-    display: inline-block;
-}
-.logostore3 {
-    background-color: #fff;
-    height: 50px;
-}
-.tentang {
-    display: flex;
-    flex-wrap: wrap;
-    width: 400px;
-}
-.pfot {
-    color: #fff;
-}
-hr {
-    border: 1px solid black;
-}
-.link-support {
-    margin-top: 5px;
+.cara-beli p {
+    font-weight: bold;
     margin-left: 10px;
+    filter: opacity(80%);
+}
+.cara-beli .pemberitahuan {
+    color: red;
+    margin-top: 10px;
+}
+.wadah-pilih-nominal {
+    width: 700px;
+}
+.isi-data {
+    display: flex;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+#gameid {
+    width: 80%;
+    padding: 10px;
+    outline: none;
+}
+#gameid:focus {
+    border: 2px solid lime;
+    border-radius: 5px;
+    transition: .3s;
+}
+#bantuan-id {
+    height: auto;
+    margin-left: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: small;
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
+    color: white;
+    background-color: lime;
 }
-.support {
-    margin-left: 5px;
-    padding: 5px 5px 2px 5px;
+.layar-hitam-bantuan {
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    display: none;
+    background-color: black;
+    filter: opacity(50%);
 }
-.support:hover {
-    transition: .3s;
+.isi-data img {
+    position: fixed;
+    z-index: 1;
+    left: 450px;
+    top: 100px;
+    height: 200px;
+    display: none;
+    width: 400px;
+}
+.pilih-nominal {
     background-color: white;
-    border-radius: 10px;
-}
-.logoig:hover {
-    transition: .3s;
-    background-color: white;
-    border-radius: 10px;
-}
-.copy {
+    height: auto;
+    width: 100%;
     padding: 15px;
-    color: #fff;
+    border-radius: 5px;
 }
-#layar-depan-header {
-    height: 100vh;
+.judul-nominal {
+    display: flex;
+    margin-bottom: 5px;
+}
+.judul-nominal h2 {
+    opacity: 70%;
+    font-size: larger;
+}
+.judul-nominal div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border-radius: 5px;
+    width: 30px;
+    background-color: lime;
+}
+.judul-membership {
+    opacity: 50%;
+    margin-top: 10px
+}
+.isi-membership {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.pembelian {
+    position: relative;
+    top: 20px;
+}
+/*NOMINAL*/
+#Beli {
+    border: 2px solid;
+    padding: 10px;
+
+}
+
+.pilihan-nominal {
+    height: 80px;
+    margin: 10px;
+    padding: 10px 10px 10px 10px; 
+    width: 200px;
+    border: 1px solid lime;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.pilihan-nominal:hover {
+    box-shadow: 0px 0px 10px black;
+}
+.nominal-membership {
+    display: flex;
+    margin-bottom: -5px;
+}
+.judul-nominal-membership {
+    font-size: 13px;
+    margin-right: 20px;
+}
+.harga-membership {
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 12px;
+    color: gray;
+}
+.membership {
+    height: 32px;
+    margin-top: 2px;
+    margin-left: 10px;
+    height: 32px;
+}
+.diamonds {
+    height: 32px;
+    margin-top: 2px;
+    margin-left: 10px;
+    height: 32px;
+}
+.isi-data-beli {
+    display: flex;
+    height: auto;
     width: 100%;
-    display: none;
-    position: absolute;
-    background-color: black;
-    filter: opacity(50%);
+    justify-content: flex-end;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
 }
-#layar-depan-main {
-    height: 100vh;
+#beli {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: lime;
+
+}
+/*FOOTER*/
+footer {
+    margin-top: 150px;
+    height: auto;
+    background-color: #0099ff;
+}
+.container-footer {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.isi-footer {
+    
+    width: 400px;
+    margin-right: 20px;
+}
+.tentang-footer p {
+    color: white;
+}
+.ikuti-kami p {
+    font-size: 14px;
+    color: white;
+    font-style: italic;
+}
+.ikuti-kami a {
+    margin-right: 5px;
+    margin-top: 10px;
+}
+.ikuti-kami a img {
+    padding: 5px;
+}
+.ikuti-kami a img:hover {
+    background-color: white;
+    border-radius: 5px;
+}
+.logo-footer img {
+    height: 60px;
+    width: 300px;
+    margin-left: -70px;
+}
+.methode-pembayaran h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+.pembayaran-footer img {
+    height: 50px;
+    background-color: white;
+    width: 120px;
+    margin-left: 10px;
+}
+.garis-footer {
+    border: 2px solid;
     width: 100%;
-    display: none;
-    top: 100%;
-    position: absolute;
-    background-color: black;
-    filter: opacity(50%);
+    height: 100%;
 }
-#layar-depan-footer {
-    height: 100vh;
-    width: 100%;
-    display: none;
-    top: 200%;
-    position: absolute;
-    background-color: black;
-    filter: opacity(50%);
+.copyright p {
+    color: white;
+    font-size: small;
+    text-align: center;
+    padding: 15px;
 }
-@media screen and (max-width: 500px) {
-    .brand-main {
+/*ANIMATION*/
+
+/*LAYAR*/
+@media screen and (min-width: 700px) {
+    .icon-side-bar {
+        display: none;
+    }
+}
+@media screen and (max-width: 400px) {
+    .cara-beli h2 {
+        margin-left: 5px;
+    }
+    .down-bar {
+        display: none;
+    }
+    .logostore-main {
         width: 100%;
     }
-    .login {
-        width: 25%;
+    .logostore {
+        width: 320px;
     }
-    .brand {
+    .wadah-cara-beli {
         width: 100%;
+    }
+    .container-main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pilih-nominal {
+        width: 100%;
+        
+    }
+    .wadah-pilih-nominal {
+        width: 100%;
+        padding: 15px;
+    }
+    .judul-nominal {
+        margin-left: 5px;
+    }
+    .isi-data img {
+        height: 100px;
+        width: 200px;
+        left: 25%;
+    }
+    .pilihan-nominal {
+        width: 134px;
+        margin: 8px;
+    }
+    .harga-membership {
+        font-size: 10px;
+    }
+    .nominal-membership {
+        margin-bottom: 4px;
+    }
+    .diamonds {
+        margin-left: 5px;
+    }
+    .membership {
+        margin-left: 0px;
+        margin-right: 5px;
+    }
+    .judul-nominal-membership {
+        margin-top: -7px;
     }
     .container-footer {
-        margin: 25px 50px 25px 50px;
+        padding: 20px;
     }
-    #nominal {
-        width: 100%;
+    .logo-footer img {
+        margin-left: -50px;
     }
 }
-@media screen and (max-width: 350px) {
-    .dm-no{
-        height: 130px;
+@media screen and (max-width: 700px) and (min-width : 401px) {
+    .cara-beli h2 {
+        margin-left: 5px;
+    }
+    .down-bar {
+        display: none;
+    }
+    .logostore-main {
+        width: 100%;
+    }
+    .logostore {
+        width: 320px;
+    }
+    .wadah-cara-beli {
+        width: 100%;
+    }
+    .container-main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pilih-nominal {
+        width: 100%;
+        
+    }
+    .wadah-pilih-nominal {
+        width: 100%;
+        padding: 20px;
+    }
+    .judul-nominal {
+        margin-left: 5px;
+    }
+    .isi-data img {
+        height: 100px;
+        width: 200px;
+        left: 25%;
+    }
+    .pilihan-nominal {
         width: 140px;
+        margin: 10px;
+    }
+    .harga-membership {
+        font-size: 10px;
+    }
+    .nominal-membership {
+        margin-bottom: 4px;
     }
 }
