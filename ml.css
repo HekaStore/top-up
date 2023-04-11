@@ -8,8 +8,8 @@
     font-family: 'lato';
 }
 @font-face {
-    src: url('UrbanJungle.otf');
-    font-family: 'FF';
+    src: url('Freshman.ttf');
+    font-family: 'FSM';
 }
 body {
     font-family: 'lato';
@@ -122,9 +122,11 @@ body {
     margin-bottom: 10px;
     font-size: xx-large;
     letter-spacing: 2px;
-    color: lightgray;
+    margin-top: 5px;
+    color: gray;
+    text-shadow: 2px 3px 2px black;
     -webkit-text-stroke: 0.1px black;
-    font-family: 'FF';
+    font-family: 'FSM';
 }
 .cara-beli p {
     font-weight: bold;
