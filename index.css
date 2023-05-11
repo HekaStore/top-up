@@ -1,402 +1,335 @@
-@font-face {
-    font-family: 'keren';
-    src: url('keren.ttf');
-}
-@font-face {
-    font-family: 'neutron';
-    src: url('NeutronsDemoRegular.ttf');
-}
-@font-face {
-    font-family: 'lato';
-    src: url('Lato-Regular.ttf');
-}
-
-*, html _{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
+@font-face {
+    src: url('Lato-Regular.ttf');
     font-family: 'lato';
-    
+}
+body {
+    height: auto;
+    font-family: 'lato';
+    width: auto;
+
+    background-color: azure;
 }
 /*HEADER*/
-header {
-    z-index: 1;
-    position: fixed;
-    width: 100%;
-}
 .container-header {
-    background: linear-gradient(45deg, #7b58ee,#1e90ff);
     height: 60px;
-    display: flex;
-    align-items: center;
-}
-.brand {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 60px;
-    width: 40%;
-}
-.logostore {
-    width:100%;
-    height: 60px;
-}
-.icon-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-}
-.garis-horizon {
-    background-color: white;
-    border-radius: 10px;
-    padding: 2px;
-    width: 25px;
-    margin: 2px 0 2px 0;
-}
-.daftar-link {
-    display: none;
-    height: 100vh;
-    background-color: #f0f0f0;
-    position: absolute;
-    left: 0;
-    width: 200px;
-    top: 0;
-}
-.link-menu {
-    display: block;
-    text-decoration: none;
-    color: black;
-    padding: 6px;
     width: 100%;
-    background-color: whitesmoke;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(lime,#0099ff);
 }
-.link-menu:hover {
+.icon-side-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 40px;
+    cursor: pointer;
+    width: 40px;
+}
+.icon-side-bar div {
+    width: 25px;
+    height: 4px;
+    margin: 2px;
+    border-radius: 10px;
+    background-color: white;
+}
+.side-bar {
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    background-color: white;
+    display: none;
+    z-index: 3;
+}
+.side-bar a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    font-weight: bold;
+}
+.side-bar a:hover {
+    background-color: lightgray;
+    transition: .2s;
+}
+.side-bar img {
+    height: 55px;
+    width: 200px;
+    margin: 10px 0 10px 0;
+}
+.layar-hitam {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    opacity: 50%;
+    z-index: 2;
+    display: none;
+}
+.down-bar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    top: 60px;
+    font-weight: bold;
+}
+.down-bar a:hover {
     background-color: lightgray;
 }
-.brand-side-bar {
-    display: flex;
-    align-items: center;
-    height: 100px;
-    width: 100%;
-
-}
-.logo-side-bar {
-    width: 100%;
-}
-/*MAIN*/
-main {
-    background-color: #f0f0f0;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
-}
-
-
-.brand-main {
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
-    width: 100%;
-    height: auto;
-}
-
-.logomain {
-    width: 80%;
-    height: 350px;
-}
-
-.wadah-side {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.sidelogo {
-    display: flex;
-    width: 80%;
-    background-color: white;
-    margin: auto;
-    height: 70px;
-}
-.games,.kupon,.diamond {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 50%;
+.down-bar a {
+    padding: 21px;
+    cursor: pointer;
     color: black;
     text-decoration: none;
-    filter: grayscale(100%);
+    flex-grow: 1;
+    text-align: center;
 }
-.kupon,.games {
-    filter: opacity(50%);
+.container-header img {
+    height: 60px;
+    width: 350px;
 }
-.namaside {
-    margin-left: -1px;
-    margin-top: -3px;
-    font-size: small;
-    font-weight: bold;
+/*main*/
+.container-main {
+    position: relative;
+    top: 60px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
-.diamond {
-    border-bottom: 3px solid red;
-    padding-top: 10px;
-    font-size: small;
-    font-weight: bold;
+.isi-main {
+    width: 1000px;
+    height: auto;
 }
-.mobile-legend {
-    border: 1px solid;
-    height: 100px;
-    width: 100px;
+.logomain {
+    width: 100%;
+    height: 400px;
+}
+.down-bar-main {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background: white;
+    width: 100%;
+    margin-bottom: 20px;
 }
 .top-up {
-    display: flex;
-    align-items: center;
-    margin: 10px 0 10px 150px;
-    font-weight: bold;
-}
-.garis {
-    width: 35px;
-    height: 8px;
-    border-radius: 10px;
-    background-color: blue;
-}
-.mobilelegend {
-    display: flex;
-    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    width: 250px;
     flex-direction: column;
+    height: 60px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    margin-top: 10px;
-    background-color: white;
-    width: 20%;
-    height: 160px;
-    margin-left: 135px;
-    box-shadow: 0px 0px 10px black;
 }
-.ml {
-    margin-top: 10px;
-    border-radius: 10px;
-}
-.namaml, .dmml {
+.top-up figcaption {
+    font-weight: bold;
     font-size: small;
 }
-.dmml {
-    margin-bottom: 5px;
-    filter: opacity(59%);
+.dm {
+    border-bottom: 3px solid orangered;
 }
-.linkml {
-    color: black;
-    text-decoration: none;
-    padding: 5px 75px 5px 75px;
-    background-color: lightblue;
-    border-radius: 15px;
+.pulsa,.listrik,.wallet {
+    filter: opacity(50%);
 }
-.wadah-topup {
+.pulsa:hover {
+    filter: opacity(100%);
+    transition: .2s;
+    border-bottom: 3px solid yellow;
+}
+.listrik:hover {
+    filter: opacity(100%);
+    transition: .2s;
+    border-bottom: 3px solid lime;
+}
+.wallet:hover {
+    filter: opacity(100%);
+    transition: .2s;
+    border-bottom: 3px solid #0099ff;
+}
+.judul-tempat-topup {
     display: flex;
-    flex-wrap: wrap;
-}
+    align-items: center;
 
-/*FOOTER*/
-footer {
-    background-color: #0099ff;
-    font-family: 'lato';
 }
-.container-footer {
-    margin: 50px 100px 50px 100px;
-    display: flex;
+.judul-tempat-topup div {
+    height: 5px;
+    margin-right: 5px;
+    width: 25px;
+    background-color: lime;
+    border-radius: 20px;
+}
+.judul-tempat-topup p {
+    font-weight: bold;
+    font-size: small;
+    margin-bottom: 20px;
+}
+.isi-tempat-topup {
+    width: 1000px;
     flex-wrap: wrap;
-}
-.footer-h2 {
-    color: #fff;
-}
-.brand-footer {
-    margin-left: -50px;
-}
-.logostore2 {
-    height: 50px;
-    width: 100%;
-    margin-bottom: 10px;
-}
-.metode {
-    margin-left: 20px;
-    margin-top: 25px;
-    display: inline-block;
-}
-.logostore3 {
-    background-color: #fff;
-    height: 50px;
-}
-.tentang {
+    padding: 10px;
     display: flex;
-    flex-wrap: wrap;
-    width: 400px;
 }
-.pfot {
-    color: #fff;
-}
-hr {
-    border: 1px solid black;
-}
-.link-support {
-    margin-top: 5px;
-    margin-left: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-}
-.support {
-    margin-left: 5px;
-    padding: 5px 5px 2px 5px;
-}
-.support:hover {
-    transition: .3s;
-    background-color: white;
-    border-radius: 10px;
-}
-.logoig:hover {
-    transition: .3s;
-    background-color: white;
-    border-radius: 10px;
-}
-.copy {
-    padding: 15px;
-    color: #fff;
-}
-#layar-depan-header {
-    height: 100vh;
-    width: 100%;
-    display: none;
-    position: absolute;
-    background-color: black;
-    filter: opacity(50%);
-}
-#layar-depan-main {
-    height: 100vh;
-    width: 100%;
-    display: none;
-    top: 100%;
-    position: absolute;
-    background-color: black;
-    filter: opacity(50%);
-}
-#layar-depan-footer {
-    height: 100vh;
-    width: 100%;
-    display: none;
-    top: 200%;
-    position: absolute;
-    background-color: black;
-    filter: opacity(50%);
-}
-/*INFO*/
-#info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-}
-.hitam {
-    height: 100vh;
-    width: 100%;
-    background-color: black;
-    filter: opacity(50%);
-}
-.info2 {
+.topup-game {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    border-radius: 15px;
     align-items: center;
-    position: absolute;
+    padding: 20px;
+    margin: 22px;
+    height: 150px;
+    width: 200px;
+    background: white;
+    box-shadow: 1px 1px 15px black;
+}
+.topup-game img {
+    border-radius: 10px;
+}
+.topup-tulisan {
+    background-color: skyblue;
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 3px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+}
+.logo-topup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-topup figcaption {
+    font-size: 13px;
+}
+.logo-topup p {
+    font-size: 11px;
+    margin-bottom: 3px;
+    filter: opacity(70%);
+}
+.topup-game a {
+    text-decoration: none;
+    color: black;
+}
+/*footer*/
+.container-footer {
     height: auto;
-    background-color: white;
+    margin-top: 60px;
+    background-color: #0099ff;
+}
+.footer {
+    height: auto;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+}
+.isi-footer {
+    height: auto;
+    width: 30%;
+}
+.metode-pembayaran {
     width: 70%;
 }
-.isi-info {
-    margin: 20px 0 20px 0;
-    background-color: #0099ff;
-    height: auto;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
+.deskripsi-footer p {
+    color: white;
+    font-size: small;
 }
-.info-h2 {
-    color: red;
-    text-align: center;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
+.ikuti-kami p {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: small;
 }
-.paragraf-info {
-    font-weight: bold;
-    margin: 0 30px 30px 30px;
+.terimakasih a{
+    margin: 3px;
 }
-.tombol-tutup-info {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    align-items: center;
-    margin-bottom: 20px;
+.terimakasih a img:hover {
+    background-color: white;
+    transition: .2s;
+    border-radius: 5px;
 }
-#tombol-tutup {
-    font-family: "lato";
+.metode-pembayaran {
+    margin-left: 10px;
+}
+marquee {
+    margin-top: 10px;
+}
+hr {
+    border: 2px solid black;
+}
+.copyright {
+    font-size: small;
+    color: white;
     padding: 10px;
-    border: none;
-    background-color: lime;
 }
-@media screen and (max-width: 700px) {
-    .logomain {
-        width: 80%;
-        height: 200px;
-    }
-    .top-up {
-        margin-left: 100px;
-    }
-    .sidelogo {
-        width: 80%;
-    }
-    .linkml {
-        padding: 5px 30px 5px 30px;
+@media screen and (min-width:400px) {
+    .icon-side-bar {
+        display: none;
     }
 }
-@media screen and (max-width: 500px) {
-    .login {
-        width: 25%;
-    }
-    .brand,.info,.info2 {
+@media screen and (max-width: 400px) {
+    .container-main {
         width: 100%;
     }
-    .mobilelegend {
-        margin: 15px;
+    .isi-main {
+        width: 100%;
+    }
+    .logomain {
+        height: 200px;
+        width: 100%;
+    }
+    .down-bar {
+        display: none;
+    }
+    .isi-tempat-topup {
+        padding: 10px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .topup-game {
+        margin: 16px;
         width: 150px;
     }
-    .container-footer {
-        margin: 25px 50px 25px 50px;
+    .judul-tempat-topup {
+        margin-left: 10px;
     }
-    .logomain {
+    .topup-tulisan {
+        width: 100px;
+    }
+    .footer {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .isi-footer {
         width: 100%;
-        height: 190px;
     }
-    .top-up {
-        margin-left: 50px;
+    .metode-pembayaran {
+        width: 80%;
     }
-    .sidelogo {
-        width: 100%;
-    }
-    
 }
-@media screen and (max-width: 350px) {
-    .mobilelegend{
-        margin: 10px;
+@media screen and (max-width: 387px) {
+    .topup-game {
+        margin: 13px;
+        width: 140px;
+    }
+    .icon-side-bar {
+        margin: 5px;
+    }
+}
+@media screen and (max-width: 355px) {
+    .topup-game {
+        margin: 13px;
         width: 130px;
     }
 }
