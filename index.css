@@ -273,7 +273,7 @@ hr {
     color: white;
     padding: 10px;
 }
-@media screen and (min-width:400px) {
+@media screen and (min-width:450px) {
     .icon-side-bar {
         display: none;
     }
