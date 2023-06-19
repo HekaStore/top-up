@@ -278,7 +278,7 @@ hr {
         display: none;
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .container-main {
         width: 100%;
     }
