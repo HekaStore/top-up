@@ -1,367 +1,301 @@
- @font-face {
-    font-family: 'lato';
-     src: url('Lato-Regular.ttf');
- }
- 
- *, html _{
-     padding: 0;
-     margin: 0;
-     box-sizing: border-box;
- }
- body {
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
-     height: 100vh;
-     font-family: 'lato';
- }
- /*HEADER*/
- header {
-    z-index: 1;
-    position: fixed;
-    width: 100%;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+@font-face {
+    font-family: 'lato';
+    src: url('Lato-Regular.ttf');
+}
+body {
+    background: azure;
+    font-family: 'lato';
+}
+/*Header*/
 .container-header {
-    background: linear-gradient(45deg, #7b58ee,#1e90ff);
-    height: 60px;
+    position: fixed;
     display: flex;
     align-items: center;
-}
-.brand {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     height: 60px;
-    width: 40%;
+    z-index: 1;
+    width: 100%;
+    background: linear-gradient(lime,#0099ff);
 }
-.logostore {
-    width:100%;
-    height: 60px;
-}
-.icon-menu {
+.icon-side-bar {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
+    justify-content: center;
+    padding: 10px;
     cursor: pointer;
 }
-.garis-horizon {
-    background-color: white;
-    border-radius: 10px;
-    padding: 2px;
+.icon-side-bar div {
+    height: 4px;
     width: 25px;
-    margin: 2px 0 2px 0;
+    margin: 2px;
+    background-color: white;
+    border-radius: 5px;
 }
-.daftar-link {
-    display: none;
+.brand img {
+    height: 60px;
+    width: 380px;
+}
+.side-bar {
     height: 100vh;
-    background-color: #f0f0f0;
-    position: absolute;
-    left: 0;
+    position: fixed;
     width: 200px;
-    top: 0;
+    display: none;
+    background: white;
+    z-index: 3;
 }
-.link-menu {
+.side-bar a {
     display: block;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    font-weight: bold;
+}
+.side-bar a:hover {
+    background: lightgray;
+    transition: .3s;
+} 
+.side-bar .brand2 img{
+    width: 200px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 50px;
+}
+.layar-hitam {
+    height: 100vh;
+    width: 100%;
+    display: none;
+    position: fixed;
+    filter: opacity(50%);
+    background: black;
+    z-index: 2;
+}
+.down-bar {
+    height: 50px;
+    width: 100%;
+    position: relative;
+    top: 60px;
+     display: flex;
+     align-items: center;
+    background: white;
+}
+.down-bar a {
+    color: black;
+    text-decoration: none;
+    flex-grow: 1;
+    text-align: center;
+    font-weight: bold;
+    padding: 16px;
+}
+.down-bar a:hover {
+    background: lightgray;
+    transition: .3s;
+}
+/*Main*/
+.container-main {
+    height: auto;
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tampilan-main {
+    height: auto;
+    width: 1000px;
+}
+.brand-main img {
+    width: 100%;
+    height: 400px;
+}
+.down-bar-tampilan {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    background: white;
+}
+.down-bar-tampilan .tempatnya {
+    flex-grow: 1;
     text-decoration: none;
     color: black;
-    padding: 6px;
-    width: 100%;
-    background-color: whitesmoke;
-}
-.link-menu:hover {
-    background-color: lightgray;
-}
-.login {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10%;
-    cursor: pointer;
-    height: 60px;
-    height: 60px;
+    flex-direction: column;
 }
-.signup {
-    text-align: center;
-    height: 40px;
-    width: 100%;
-    color: white;
-    border: none;
-    background: transparent;
+.down-bar-tampilan .tempatnya p {
     font-weight: bold;
-    font-size: 15px ;
+    margin-top: -5px;
 }
-.brand-side-bar {
+.top-up, .listrik, .e-wallet {
+    opacity: 60%;
+}
+.pulsa {
+    border-bottom: 3px solid yellow;
+}
+.top-up:hover {
+    border-bottom: 3px solid orangered;
+    opacity: 100%;
+    transition: .1s;
+}
+.listrik:hover {
+    border-bottom: 3px solid lime;
+    transition: .1s;
+    opacity: 100%;
+}
+.e-wallet:hover {
+    border-bottom: 3px solid #0099ff;
+    transition: .1s;
+    opacity: 100%;
+}
+.topup-pulsa {
+    margin-top: 20px;
+}
+.box-judul {
+    height: 5px;
+    width: 30px;
+    background: yellow;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.judul-tempat-topup-pulsa {
     display: flex;
     align-items: center;
-    height: 100px;
+    margin-bottom: 10px;
+}
+.pilihan-topup-pulsa {
+    display: flex;
+    flex-wrap: wrap;
+}
+.kartu {
+    height: 160px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+    margin: 20px;
+    width: 210px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.kartu .logo img {
+    border-radius: 10px;
+}
+.kartu .logo figcaption {
+    text-align: center;
+    font-size: small;
+    font-weight: bold;
+}
+.kartu .logo p {
+    font-size: 14px;
+    opacity: 90%;
+    text-align: center;
+}
+.kartu a {
+    text-decoration: none;
+    color: black;
+    background: skyblue;
+    padding: 5px;
+    width: 70%;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+/*footer*/
+.container-footer {
+    background: #0099ff;
+    height: auto;
     width: 100%;
-
 }
-.logo-side-bar {
-    width: 100%;
+.footer {
+    display: flex;
+    padding: 40px 50px;
 }
- /*MAIN*/
-main {
-    padding-bottom: 20px;
-     background-color: whitesmoke;
-     display: flex;
-     flex-direction: column;
- }
- .brand-main {
-     
-     display: flex;
-     justify-content: center;
-     margin-top: 60px;
-     width: 100%;
-     height: auto;
- }
- 
- .logomain {
-     width: 80%;
-     height: 350px;
- }
- 
- .wadah-side {
-     width: 100%;
-     display: flex;
-     justify-content: center;
- }
- .sidelogo {
-     display: flex;
-     width: 80%;
-     background-color: white;
-     margin: auto;
-     height: 70px;
- }
- .games,.kupon,.diamond {
-     display: flex;
-     align-items: center;
-     flex-direction: column;
-     width: 50%;
-     color: black;
-     text-decoration: none;
-     filter: grayscale(100%);
- }
- .diamond,.games {
-    filter: opacity(50%);
+.isi-footer {
+    width: 40%;
 }
- .namaside {
-     margin-left: -1px;
-     margin-top: -3px;
-     font-size: small;
-     font-weight: bold;
- }
- .diamond {
-     padding-top: 10px;
-     font-size: small;
-     font-weight: bold;
-     
- }
- .kupon {
-     border-bottom: 3px solid red;
- }
- .mobile-legend {
-     border: 1px solid;
-     height: 100px;
-     width: 100px;
- }
- .top-up {
-     display: flex;
-     align-items: center;
-     margin: 10px 0 10px 150px;
-     font-weight: bold;
- }
- .garis {
-     width: 35px;
-     height: 8px;
-     border-radius: 10px;
-     background-color: lime;
- }
- .mobilelegend {
-     display: flex;
-     border-radius: 15px;
-     flex-direction: column;
-     align-items: center;
-     margin-top: 10px;
-     background-color: white;
-     width: 20%;
-     margin-left: 28px;
-     height: 160px;
-     box-shadow: 0px 0px 10px black;
- }
- .ml {
-     margin-top: 10px;
-     border-radius: 10px;
- }
- .namaml {
-     font-size: small;
-
-     font-weight: bold;
- }
- .dmml {
-     font-size: small;
-     margin-bottom: 5px;
-     filter: opacity(59%);
- }
- .linkml {
-
-     font-weight: bold;
-     color: black;
-     text-decoration: none;
-     padding: 5px 75px 5px 75px;
-     background-color: lightblue;
-     border-radius: 15px;
- }
- .wadah-topup {
-     margin-left: 120px;
-     display: flex;
-     width: 90%;
-     flex-wrap: wrap;
- }
- /*FOOTER*/
-footer {
-     background-color: #0099ff;
-
- }
- .container-footer {
-     margin: 50px 100px 50px 100px;
-     display: flex;
-     flex-wrap: wrap;
- }
- h2 {
-     color: #fff;
- }
- .brand-footer {
-     margin-left: -50px;
- }
- .logostore2 {
-     height: 50px;
-     width: 100%;
-     margin-bottom: 10px;
- }
- .metode {
-     margin-left: 20px;
-     margin-top: 25px;
-     display: inline-block;
- }
- .logostore3 {
-     background-color: #fff;
-     height: 50px;
- }
- .tentang {
-     display: flex;
-     flex-wrap: wrap;
-     width: 400px;
- }
- .pfot {
-     color: #fff;
- }
- hr {
-     border: 1px solid black;
- }
- .link-support {
-     margin-top: 5px;
-     margin-left: 10px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     width: 50px;
- }
- .support {
-     margin-left: 5px;
-     padding: 5px 5px 2px 5px;
- }
- .support:hover {
-     transition: .3s;
-     background-color: white;
-     border-radius: 10px;
- }
- .logoig:hover {
-     transition: .3s;
-     background-color: white;
-     border-radius: 10px;
- }
- .copy {
-     padding: 15px;
-     color: #fff;
- }
- #layar-depan-header {
-    height: 100vh;
-    width: 100%;
-    display: none;
-    position: absolute;
-    background-color: black;
-    filter: opacity(50%);
+.isi-footer p {
+    color: white;
+    font-size: small;
 }
-#layar-depan-main {
-    height: 100vh;
-    width: 100%;
-    display: none;
-    top: 100%;
-    position: absolute;
-    background-color: black;
-    filter: opacity(50%);
+.sosmed a {
+    margin: 0 1px;
 }
-#layar-depan-footer {
-    height: 100vh;
-    width: 100%;
-    display: none;
-    top: 200%;
-    position: absolute;
-    background-color: black;
-    filter: opacity(50%);
+.pembayaran {
+    color: white;
+    overflow: hidden;
+    width: 60%;
 }
- @media screen and (max-width: 700px) {
-     .logomain {
-         width: 80%;
-         height: 200px;
-     }
-     .top-up {
-         margin-left: 100px;
-     }
-     .sidelogo {
-         width: 80%;
-     }
-     .linkml {
-         padding: 5px 30px 5px 30px;
-     }
- }
- @media screen and (max-width: 500px) {
-    .login {
-        width: 25%;
+hr {
+    border: 2px solid;
+}
+.brand-footer img {
+    margin-left: -50px;
+}
+.copyright {
+    color: white;
+    font-size: small;
+    padding: 10px;
+    text-align: center;
+}
+marquee img {
+    margin: 10px 2px;
+}
+@media screen and (min-width: 450px) {
+    .icon-side-bar {
+        display: none;
     }
-    .brand {
+}
+@media screen and (max-width: 450px) {
+    .brand img {
+        width: 300px;
+    }
+    .down-bar {
+        display: none;
+    }
+    .container-main {
+        margin-top: 0;
+    }
+    .tampilan-main {
+        margin-top: 60px;
+    }
+    .brand-main img {
+        height: 200px;
+    }
+    .box-judul {
+        margin-left: 10px;
+    }
+    .kartu {
+        margin: 15px;
+        width: 170px;
+    }
+    .footer {
+        flex-direction: column;
+        padding: 20px ;
+    }
+    .isi-footer {
         width: 100%;
-    } 
-    .mobilelegend {
-         margin: 15px;
-         width: 170px;
-     }
-     .container-footer {
-         margin: 25px 50px 25px 50px;
-     }
-     .logomain {
-         width: 100%;
-         height: 190px;
-     }
-     .top-up {
-         margin-left: 50px;
-     }
-     .sidelogo {
-         width: 100%;
-     }
-     .wadah-topup {
-          width: 100%;
-          margin-left: 0px;
-     }
-     .mobilelegend {
-          width: 40%;
-     }
-     
+    }
+    .pembayaran {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 401px) {
+    .kartu {
+        margin: 14px;
+        width: 155px;
+    }
+}
+@media screen and (max-width: 365px) {
+    .kartu {
+        margin: 12px;
+        width: 150px;
+    }
 
-     
- }
- 
+}
