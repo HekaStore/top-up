@@ -11,7 +11,6 @@ body {
     height: auto;
     font-family: 'lato';
     width: auto;
-
     background-color: azure;
 }
 /*HEADER*/
@@ -22,7 +21,7 @@ body {
     z-index: 1;
     display: flex;
     align-items: center;
-    background: linear-gradient(lime,#0099ff);
+    background: linear-gradient(2deg,lime,#0099ff);
 }
 .icon-side-bar {
     display: flex;
