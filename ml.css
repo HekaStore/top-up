@@ -88,6 +88,7 @@ body {
     font-weight: bold;
     background-color: white;
     flex-grow: 1;
+    text-align: center;
 }
 .down-bar a:hover {
     background-color: lightgray;
