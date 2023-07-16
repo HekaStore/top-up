@@ -15,7 +15,7 @@ function submit() {
      if(konfirmasi == true) {
           document.getElementById('beli').href;
      } else if (konfirmasi == false) {
-          document.getElementById('beli').href = "Indosat.html";
+          document.getElementById('beli').href = "list-cod.html";
      }
 }
 function beli1(){
