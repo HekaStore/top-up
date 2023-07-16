@@ -8,10 +8,15 @@ layarHitam.style.display = 'none';
 //beli
 function submit() {
      let masukan = document.getElementById('gameid');
+     let konfirmasi = confirm('Tekan "OK" jika ingin Membelinya\nTekan "Batal" jika Tidak ingin Membelinya')
      if(masukan.value == '') {
-          alert('Ketik ID Game Terlebih Dahulu !!!');
-          document.getElementById('beli').href = '#';
-     }else {alert('Klik "OK" Jika Anda Benar-Benar Membeli ini')}
+          alert('Ketik ID Terlebih Dahulu !!!');
+     };
+     if(konfirmasi == true) {
+          document.getElementById('beli').href;
+     } else if (konfirmasi == false) {
+          document.getElementById('beli').href = "Indosat.html";
+     }
 }
 function beli1(){
      let ID = document.getElementById('gameid').value;
