@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>PUBG</title>
+     <link rel="stylesheet" href="ml.css">
+     <link rel="shortcut icon" href="logoweb.webp">
+     <link rel="preload" as="image" href="">
+</head>
+<body>
+
+     <header>
+
+          <div class="SIDEBAR">
+               
+               <div class="side-bar" id="sideBar">
+                    <img src="logostore.webp" alt="">
+
+                    <div class="daftar-link-sidebar">
+                         <a href="beranda.html">Beranda</a>
+                         <a href="about.html">About</a>
+                         <a href="contact.html">Contact</a>
+                    </div>
+               </div>
+               <div class="layar-hitam" id="layarHitam"></div>
+          </div>
+          
+          <div class="container-header">
+               <div class="icon-side-bar">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+               </div>
+               <div><img class="logostore" src="logostore.webp" alt=""></div>
+          </div>
+
+          <div class="down-bar">
+               <a href="beranda.html">Beranda</a>
+               <a href="about.html">About</a>
+               <a href="contact.html">Contact</a>
+          </div>
+          
+     </header>
+
+     <main>
+          <div class="container-main">
+               <div class="wadah-cara-beli">
+                    <div class="logostore-main"><img src="pubg.webp" alt=""></div>
+
+                    <div class="cara-beli">
+                         <h2>PUBG</h2>
+                         <p>Cara Order :</p>
+                         <p>1. Ketik ID</p>
+                         <p>2. Pilih Nominal UC</p>
+                         <p>3. Ketik metode pembayaran</p>
+                         <p>4. UC akan segera masuk ke Akun anda</p>
+                         <p class="pemberitahuan">*Kesalahan pengetikan id, Tanggungjawap pembeli</p>
+                    </div><br>
+               </div>
+               
+                    <div class="wadah-pilih-nominal">
+                    <div class="lengkapi-data">
+
+                         <div class="judul-nominal">
+                              <div><b>1</b></div>&ensp;<h2>Lengkapi Data</h2>
+                         </div>
+
+                    
+                         <div class="isi-data">
+                              <input type="number" placeholder="User ID" id="gameid" name="gameid">
+                              <button id="bantuan-id" onclick="bantuan()"><p>&nbsp;<b>?&nbsp;Bantuan</b>&nbsp;</p></button>
+                              <div id="bantuan-gameid">
+                                   <div class="layar-hitam-bantuan"></div><img id="bantuan-img" src="bantuan-pubg.png" alt="">
+                              </div>
+                               
+                         </div>
+                    
+                         
+
+                         </div><br>
+
+                         <div class="nominalnya">
+
+                              <div class="judul-nominal">
+                                   <div><b>2</b></div>&ensp;<h2>Pilih Nominal</h2>
+                               </div>
+
+                         <div class="pilih-nominal">
+                              <div class="judul-membership"><h4>Membership</h4></div>
+                              <div class="isi-membership">
+                                   <div class="pilihan-nominal" onclick="belimember1()" id="M1">
+                                        <div class="nominal-membership">
+                                            <p class="judul-nominal-membership">Pubg Royal Pass</p>
+                                        <img class="membership" src="royal-pass-pubg.png" alt=""> 
+                                        </div>
+                                        <p class="harga-membership">Rp 165.000</p>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="pilih-nominal">
+                              <div class="judul-membership"><h4>Top Up</h4></div>
+                              <div class="isi-membership">
+
+                                   <div class="pilihan-nominal" onclick="beli1()" id="N1">
+                                        <div class="nominal-membership">
+                                            <p class="judul-nominal-membership">35 UC</p>
+                                        <img class="diamonds" src="UC.webp" alt="">
+                                        </div>
+                                        <p class="harga-membership">Rp 8.000</p>
+                                   </div>
+
+                                   <div class="pilihan-nominal" onclick="beli2()" id="N2">
+                                        <div class="nominal-membership">
+                                            <p class="judul-nominal-membership">50 UC</p>
+                                        <img class="diamonds" src="UC.webp" alt=""> 
+                                        </div>
+                                        <p class="harga-membership">Rp 10.000</p>
+                                   </div>
+
+                                   <div class="pilihan-nominal" onclick="beli3()" id="N3">
+                                        <div class="nominal-membership">
+                                            <p class="judul-nominal-membership">70 UC</p>
+                                        <img class="diamonds" src="UC.webp" alt=""> 
+                                        </div>
+                                        <p class="harga-membership">Rp 15.000</p>
+                                   </div>
+
+                                   <div class="pilihan-nominal" onclick="beli4()" id="N4">
+                                        <div class="nominal-membership">
+                                            <p class="judul-nominal-membership">131 UC</p>
+                                        <img class="diamonds" src="UC.webp" alt=""> 
+                                        </div>
+                                        <p class="harga-membership">Rp 25.000</p>
+                                   </div>
+
+                                   <div class="pilihan-nominal" onclick="beli5()" id="N5">
+                                        <div class="nominal-membership">
+                                            <p class="judul-nominal-membership">221 UC</p>
+                                        <img class="diamonds" src="UC.webp" alt=""> 
+                                        </div>
+                                        <p class="harga-membership">Rp 41.000</p>
+                                   </div>
+
+                                   <div class="pilihan-nominal" onclick="beli6()" id="N6">
+                                        <div class="nominal-membership">
+                                            <p class="judul-nominal-membership">263 UC</p>
+                                        <img class="diamonds" src="UC.webp" alt=""> 
+                                        </div>
+                                        <p class="harga-membership">Rp 50.000</p>
+                                   </div>
+
+                              </div>
+                         </div>
+
+                         </div>
+                         <div class="pembelian">
+                              <div class="judul-nominal">
+                              <div><b>3</b></div>&ensp;<h2>Beli</h2>
+                         </div>
+                         <div class="isi-data-beli">
+                              <a id="beli" onclick="submit()" href="">Beli</a>
+                         </div>
+                         </div>
+                         
+
+                    </div>
+               
+          </div>
+     </main>
+
+     <footer>
+          <div class="container-footer">
+               <div class="isi-footer">
+                    <div class="logo-footer"><img src="logostore.webp" alt=""></div>
+                    <div class="tentang-footer"><p>Supplier Top Up game online dan voucher termurah, terpercaya, tercepat di Indonesia. Tersedia berbagai pembayaran, mulai dari CASH, Dana, Ovo, Gopay, ShopeePay dan Lain lain</p></div><br>
+                    <div class="ikuti-kami">
+                         <p>Ikuti Kami</p>
+                         <a href=""><img src="ig.webp" alt="" height="32" width="32"></a>
+                         <a href=""><img src="yt.svg" alt="" height="32" width="32"></a>
+                         <a href=""><img src="tt.webp" alt="" height="32" width="32"></a>
+                    </div>
+               </div>
+
+               <div class="pembayaran-footer">
+                    <div class="methode-pembayaran">
+                         <h2>Pembayaran</h2>
+                         <marquee behavior="" direction="right" class="pembayaran-footer">
+                              <img src="Cash.webp" alt="">
+                              <img src="metode-gopay.webp" alt="">
+                              <img src="logodana.webp" alt="">
+                              <img src="metode-ovo.webp" alt="">
+                              <img src="metode-shoopepay.webp" alt="">
+                         </marquee>
+                    </div>
+               </div>
+          </div>
+          <div class="copyright">
+               <div class="garis-footer"></div>
+               <p>Copyright 2023 HekaStore</p>
+          </div>
+     </footer>
+
+     <script src="pubg-list.js"></script>
+     <script src="jquery.js"></script>
+     <script>
+          $(document).ready(function(){
+     //SIDEBAR
+     $('.icon-side-bar').click(function(){
+          $('.layar-hitam').css({display: 'block'});
+          $('.side-bar').animate({width: 'toggle'})
+     });
+     $('.layar-hitam').click(function(){
+          $(this).css({display: 'none'});
+          $('.side-bar').animate({width: 'toggle'})
+     });
+     $('#bantuan-id').click(function(){
+          $('#bantuan-img,.layar-hitam-bantuan').css({display: 'block'})
+     })
+     $('.layar-hitam-bantuan,#bantuan-img').click(function(){
+          $('.layar-hitam-bantuan,#bantuan-img').css({display: 'none'})
+     })
+
+     //NOMINAL
+     $('#M1').click(function(){
+          $(this).css({backgroundColor: 'lightgray'});
+          $(this).css({border: '1px solid gray'});
+          $('#M2,#N1,#N2,#N3,#N4,#N5,#N6,#N7,#N8,#N9,#N10,#N11,#N12,#N13,#N14,#N15').css({backgroundColor: 'white',border: '1px solid lime'});
+     });
+     $('#M2').click(function(){
+          $(this).css({backgroundColor: 'lightgray'});
+          $(this).css({border: '1px solid gray'});
+          $('#M1,#N1,#N2,#N3,#N4,#N5,#N6,#N7,#N8,#N9,#N10,#N11,#N12,#N13,#N14,#N15').css({backgroundColor: 'white',border: '1px solid lime'});
+     });
+     $('#N1').click(function(){
+          $(this).css({backgroundColor: 'lightgray'});
+          $(this).css({border: '1px solid gray'});
+          $('#M1,#M2,#N2,#N3,#N4,#N5,#N6,#N7,#N8,#N9,#N10,#N11,#N12,#N13,#N14,#N15').css({backgroundColor: 'white',border: '1px solid lime'});
+     });
+     $('#N2').click(function(){
+          $(this).css({backgroundColor: 'lightgray'});
+          $(this).css({border: '1px solid gray'});
+          $('#M1,#M2,#N1,#N3,#N4,#N5,#N6,#N7,#N8,#N9,#N10,#N11,#N12,#N13,#N14,#N15').css({backgroundColor: 'white',border: '1px solid lime'});
+     });
+     $('#N3').click(function(){
+          $(this).css({backgroundColor: 'lightgray'});
+          $(this).css({border: '1px solid gray'});
+          $('#M1,#M2,#N1,#N2,#N4,#N5,#N6,#N7,#N8,#N9,#N10,#N11,#N12,#N13,#N14,#N15').css({backgroundColor: 'white',border: '1px solid lime'});
+     });
+     $('#N4').click(function(){
+          $(this).css({backgroundColor: 'lightgray'});
+          $(this).css({border: '1px solid gray'});
+          $('#M1,#M2,#N1,#N2,#N3,#N5,#N6,#N7,#N8,#N9,#N10,#N11,#N12,#N13,#N14,#N15').css({backgroundColor: 'white',border: '1px solid lime'});
+     });
+     $('#N5').click(function(){
+          $(this).css({backgroundColor: 'lightgray'});
+          $(this).css({border: '1px solid gray'});
+          $('#M1,#M2,#N1,#N2,#N3,#N4,#N6,#N7,#N8,#N9,#N10,#N11,#N12,#N13,#N14,#N15').css({backgroundColor: 'white',border: '1px solid lime'});
+     });
+     $('#N6').click(function(){
+          $(this).css({backgroundColor: 'lightgray'});
+          $(this).css({border: '1px solid gray'});
+          $('#M1,#M2,#N1,#N2,#N3,#N4,#N5,#N7,#N8,#N9,#N10,#N11,#N12,#N13,#N14,#N15').css({backgroundColor: 'white',border: '1px solid lime'});
+     });
+     $('#N7').click(function(){
+          $(this).css({backgroundColor: 'lightgray'});
+          $(this).css({border: '1px solid gray'});
+          $('#M1,#M2,#N1,#N2,#N3,#N4,#N5,#N6,#N8,#N9,#N10,#N11,#N12,#N13,#N14,#N15').css({backgroundColor: 'white',border: '1px solid lime'});
+     });
+     $('#N8').click(function(){
+          $(this).css({backgroundColor: 'lightgray'});
+          $(this).css({border: '1px solid gray'});
+          $('#M1,#M2,#N1,#N2,#N3,#N4,#N5,#N6,#N7,#N9,#N10,#N11,#N12,#N13,#N14,#N15').css({backgroundColor: 'white',border: '1px solid lime'});
+     });
+     $('#N9').click(function(){
+          $(this).css({backgroundColor: 'lightgray'});
+          $(this).css({border: '1px solid gray'});
+          $('#M1,#M2,#N1,#N2,#N3,#N4,#N5,#N6,#N7,#N8,#N10,#N11,#N12,#N13,#N14,#N15').css({backgroundColor: 'white',border: '1px solid lime'});
+     });
+     $('#N10').click(function(){
+          $(this).css({backgroundColor: 'lightgray'});
+          $(this).css({border: '1px solid gray'});
+          $('#M1,#M2,#N1,#N2,#N3,#N4,#N5,#N6,#N7,#N8,#N9,#N11,#N12,#N13,#N14,#N15').css({backgroundColor: 'white',border: '1px solid lime'});
+     });
+     $('#N11').click(function(){
+          $(this).css({backgroundColor: 'lightgray'});
+          $(this).css({border: '1px solid gray'});
+          $('#M1,#M2,#N1,#N2,#N3,#N4,#N5,#N6,#N7,#N8,#N9,#N10,#N12,#N13,#N14,#N15').css({backgroundColor: 'white',border: '1px solid lime'});
+     });
+     $('#N12').click(function(){
+          $(this).css({backgroundColor: 'lightgray'});
+          $(this).css({border: '1px solid gray'});
+          $('#M1,#M2,#N1,#N2,#N3,#N4,#N5,#N6,#N7,#N8,#N9,#N10,#N11,#N13,#N14,#N15').css({backgroundColor: 'white',border: '1px solid lime'});
+     });
+     $('#N13').click(function(){
+          $(this).css({backgroundColor: 'lightgray'});
+          $(this).css({border: '1px solid gray'});
+          $('#M1,#M2,#N1,#N2,#N3,#N4,#N5,#N6,#N7,#N8,#N9,#N10,#N11,#N12,#N14,#N15').css({backgroundColor: 'white',border: '1px solid lime'});
+     });
+     $('#N14').click(function(){
+          $(this).css({backgroundColor: 'lightgray'});
+          $(this).css({border: '1px solid gray'});
+          $('#M1,#M2,#N1,#N2,#N3,#N4,#N5,#N6,#N7,#N8,#N9,#N10,#N11,#N12,#N13,#N15').css({backgroundColor: 'white',border: '1px solid lime'});
+     });
+     $('#N15').click(function(){
+          $(this).css({backgroundColor: 'lightgray'});
+          $(this).css({border: '1px solid gray'});
+          $('#M1,#M2,#N1,#N2,#N3,#N4,#N5,#N6,#N7,#N8,#N9,#N10,#N11,#N12,#N13,#N14').css({backgroundColor: 'white',border: '1px solid lime'});
+     });
+});
+     </script>
+     
+</body>
+</html>
